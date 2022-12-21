@@ -1,5 +1,6 @@
 // Import core
 // Import third parts
+import { AnalyticsWrapper } from "../../components/AnalyticsWrapper";
 // Import customs
 import "../../styles/globals.css";
 import Header from "../../components/Header";
@@ -22,6 +23,7 @@ export default function RootLayout({
           <Header />
           <Navbar />
           {children}
+          <AnalyticsWrapper />
           <Footer />
           <Background />
         </body>
