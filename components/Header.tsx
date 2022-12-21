@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="flex relative mt-20 z-50">
       <Link href="/" className="cursor-pointer">
-        <div className="space-y-1 text-brand">
+        <div className="space-y-1 text-brand dark:text-azure">
           <h1 className="text-xl font-bold uppercase">
             Federico Kratter Thaler
           </h1>

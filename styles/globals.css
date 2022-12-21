@@ -4,8 +4,8 @@
 
 @layer base {
 
-  html {
-    @apply bg-grey;
+  body {
+    @apply bg-grey dark:bg-pop;
     scroll-behavior: smooth;
   }
 
@@ -14,11 +14,10 @@
 @layer components {
 
   .navitem {
-    @apply cursor-pointer text-sm uppercase hover:underline text-brand;
+    @apply cursor-pointer text-sm uppercase hover:underline text-brand dark:text-azure;
   }
 
   .background {
-        background:radial-gradient(circle at 100%, #F6ECDD, #F4E7D4 50%, #F4E7D4 75%, #C3B9AA 75%);
         animation: move-1 20s ease-in-out infinite;
         transform-origin: 50% 50%;
         -webkit-animation: move-1 40s ease-in-out infinite;

@@ -15,6 +15,13 @@ module.exports = {
         DEFAULT: "#F4E7D4",
         dark: "#B89475",
       },
+      pop: {
+        DEFAULT: "#E93685",
+      },
+      azure: {
+        DEFAULT: "#E3EDFF",
+        dark: "#3C6CC2",
+      },
       white: {
         DEFAULT: "#ffffff",
       },
@@ -30,4 +37,5 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],
+  darkMode: "class",
 };

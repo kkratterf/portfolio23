@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section>
       <div className="flex relative mt-[60vh] mb-40 max-w-screen-xl mx-auto z-20">
-        <p className="text-4xl text-brand">
+        <p className="text-4xl text-brand dark:text-azure">
           Hi, there. I am Federico, a digital product designer focus on user
           experience, user interface and interaction. Im love also frontend
           development and photography. I have been creating digital design over
