@@ -12,9 +12,9 @@ function Navbar() {
           <Link href="/project-library">Project library</Link>
         </li>
         <li className="navitem">
-          <a href="/contact">Contact me</a>
+          <a href="mailto:kkratterf@gmail.com">Contact me</a>
         </li>
-        <PopButton/>
+        <PopButton />
       </ul>
     </nav>
   );

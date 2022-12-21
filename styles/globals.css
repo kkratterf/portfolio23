@@ -5,8 +5,40 @@
 @layer base {
 
   body {
-    @apply bg-grey dark:bg-pop;
+    @apply bg-grey dark:bg-pop transition duration-500;
     scroll-behavior: smooth;
+  }
+
+  h1 {
+    @apply text-brand dark:text-azure transition duration-500;
+  }
+
+  h2 {
+    @apply text-brand dark:text-azure transition duration-500;
+  }
+
+  h3 {
+    @apply text-brand dark:text-azure transition duration-500;
+  }
+
+  h4 {
+    @apply text-brand dark:text-azure transition duration-500;
+  }
+
+  h5 {
+    @apply text-brand dark:text-azure transition duration-500;
+  }
+
+  h6 {
+    @apply text-brand dark:text-azure transition duration-500;
+  }
+
+  p {
+    @apply text-brand dark:text-azure transition duration-500;
+  }
+
+  li {
+    @apply text-brand dark:text-azure transition duration-500;
   }
 
 }
@@ -14,7 +46,11 @@
 @layer components {
 
   .navitem {
-    @apply cursor-pointer text-sm uppercase hover:underline text-brand dark:text-azure;
+    @apply cursor-pointer text-sm font-medium uppercase hover:opacity-70 text-brand dark:text-azure transition duration-500;
+  }
+
+  .contactitem {
+    @apply cursor-pointer text-sm font-medium uppercase hover:opacity-70 transition duration-500;
   }
 
   .background {

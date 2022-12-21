@@ -1,8 +1,12 @@
+// Import core
+// Import third parts
+// Import customs
+
 function Hero() {
   return (
-    <section>
-      <div className="flex relative mt-[60vh] mb-40 max-w-screen-xl mx-auto z-20">
-        <p className="text-4xl text-brand dark:text-azure">
+    <section className="flex relative mt-[60vh] z-20">
+      <div>
+        <h4 className="text-4xl">
           Hi, there. I am Federico, a digital product designer focus on user
           experience, user interface and interaction. Im love also frontend
           development and photography. I have been creating digital design over
@@ -13,7 +17,7 @@ function Hero() {
           spaces. No matter the mediums, I have been always blurring the line
           between design and technology, and keep pushing the boundaries of
           what’s ahead.
-        </p>
+        </h4>
       </div>
     </section>
   );

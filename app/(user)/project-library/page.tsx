@@ -6,8 +6,8 @@ import { groq } from "next-sanity";
 import { client } from "../../../lib/sanity.client";
 import PreviewSuspense from "../../../components/PreviewSuspense";
 // Import customs
-import FeaturedPreviewProjectList from "../../../components/FeaturedPreviewProjectList";
-import FeaturedProjectList from "../../../components/FeaturedProjectList";
+import PreviewProjectList from "../../../components/PreviewProjectList";
+import ProjectList from "../../../components/ProjectList";
 
 export const revalidate = 3600;
 
@@ -31,7 +31,7 @@ export default async function LibraryPage() {
           </div>
         }
       >
-        <FeaturedPreviewProjectList query={query} />
+        <PreviewProjectList query={query} />
       </PreviewSuspense>
     );
   }
@@ -39,7 +39,7 @@ export default async function LibraryPage() {
   const projects = await client.fetch(query);
   return (
     <>
-      <FeaturedProjectList projects={projects} />
+      <ProjectList projects={projects} />
     </>
   );
 }

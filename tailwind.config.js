@@ -6,6 +6,9 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Roobert TRIAL", "sans-serif"],
+    },
     colors: {
       transparent: "transparent",
       grey: {

@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import Background from "../../components/Background";
 import Providers from "../../components/Providers";
+import Footer from "../../components/Footer";
 
 
 
@@ -21,6 +22,7 @@ export default function RootLayout({
           <Header />
           <Navbar />
           {children}
+          <Footer />
           <Background />
         </body>
       </Providers>

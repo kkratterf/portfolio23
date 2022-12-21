@@ -7,11 +7,11 @@ function Header() {
   return (
     <header className="flex relative mt-20 z-50">
       <Link href="/" className="cursor-pointer">
-        <div className="space-y-1 text-brand dark:text-azure">
+        <div className="space-y-1">
           <h1 className="text-xl font-bold uppercase">
             Federico Kratter Thaler
           </h1>
-          <h2 className="font-mono">Experience & Interaction Designer</h2>
+          <h2>Experience & Interaction Designer</h2>
         </div>
       </Link>
     </header>

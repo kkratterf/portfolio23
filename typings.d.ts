@@ -16,6 +16,8 @@ interface Project extends Base {
     slug: Slug;
     title: string;
     description: string;
+    featured: boolean;
+    visible: boolean;
 }
 
 interface Author extends Base {
