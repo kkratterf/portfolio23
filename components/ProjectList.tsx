@@ -12,39 +12,34 @@ type Props = {
 
 function ProjectList({ projects }: Props) {
   return (
-    <section className="mt-[60vh] mb-40 z-20">
-      
-      {projects.map((project) => (
-        <ClientSideRoute
-          route={`/project-library/${project.slug.current}`}
-          key={project._id}
-        >
-          <div>
-            <div className="relative w-full h-80">
-              <Image
-                className=""
-                src={urlFor(project.mainImage).url()}
-                alt={project.author.name}
-                fill
-              />
-            </div>
-            <div>
-              <p>{project.title}</p>
-            </div>
-            <div>
-              {project.categories.map((category) => (
-                <div key={category._id}>
-                  <p>{category.title}</p>
+    <section className="mt-[60vh] relative z-50">
+      <div className="grid grid-cols-1 gap-y-20 gap-x-10 sm:grid-cols-2 xl:grid-cols-3">
+        {projects.map((project) => (
+          <ClientSideRoute
+            route={`/project-library/${project.slug.current}`}
+            key={project._id}
+          >
+            <div className="group cursor-pointer space-y-4">
+              <div className="relative w-full h-124 aspect-w-1 rounded-xl overflow-hidden">
+                <Image
+                  className="object-center object-cover group-hover:scale-105 duration-500"
+                  src={urlFor(project.mainImage).url()}
+                  alt={project.author.name}
+                  fill
+                />
+              </div>
+              <div className="space-y-2 mx-1 group-hover:opacity-70 duration-500">
+                <h5 className="font-bold text-3xl">{project.title}</h5>
+                <div className="flex space-x-2">
+                  {project.categories.map((category) => (
+                    <p key={category._id}>{category.title}</p>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
-            <div>
-              <p>{project.title}</p>
-              <p>{project.description}</p>
-            </div>
-          </div>
-        </ClientSideRoute>
-      ))}
+          </ClientSideRoute>
+        ))}
+      </div>
     </section>
   );
 }

@@ -12,7 +12,7 @@ import ProjectList from "../../../components/ProjectList";
 export const revalidate = 3600;
 
 const query = groq`
-  *[_type=='project'] {
+  *[_type=='project' && visible == true] {
     ...,
     author->,
     categories[]->

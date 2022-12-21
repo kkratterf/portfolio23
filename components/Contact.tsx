@@ -9,18 +9,24 @@ function Contact() {
         <h3 className="text-9xl font-bold">
           Maybe just drop me a line to grab a drink.
         </h3>
-        <div className="space-y-20">
-          <h4 className="text-4xl">
-            If anything of those sounds interesting, just feel free to reach out
-            to me. you are welcome.
-          </h4>
-          <ul className="space-y-2">
-            <li className="contactitem">( L ) Linkedin</li>
-            <li className="contactitem">( B ) Behance</li>
-            <li className="contactitem">( I ) Instagram</li>
-            <li className="contactitem">( E ) kkratterf@gmail.com</li>
-          </ul>
-        </div>
+        <h4 className="text-4xl">
+          If anything of those sounds interesting, just feel free to reach out
+          to me. you are welcome.
+        </h4>
+        <ul className="space-y-2">
+          <li className="contactitem">
+            <a href="https://www.linkedin.com/in/kkratter/">( L ) Linkedin</a>
+          </li>
+          <li className="contactitem">
+            <a href="https://www.behance.net/kkratter">( B ) Behance</a>
+          </li>
+          <li className="contactitem">
+            <a href="https://www.instagram.com/kkratter/">( I ) Instagram</a>
+          </li>
+          <li className="contactitem">
+            <a href="mailto:kkratterf@gmail.com">( E ) kkratterf@gmail.com</a>
+          </li>
+        </ul>
       </div>
     </section>
   );
