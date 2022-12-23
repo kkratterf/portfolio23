@@ -1,4 +1,7 @@
+"use client"
+
 // Import core
+import { useEffect, useState } from "react";
 // Import third parts
 import { AnalyticsWrapper } from "../../components/AnalyticsWrapper";
 // Import customs
@@ -8,23 +11,35 @@ import Navbar from "../../components/Navbar";
 import Background from "../../components/Background";
 import Providers from "../../components/Providers";
 import Footer from "../../components/Footer";
-
-
+import Loader from "../../components/Loader";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 7000);
+  });
+
   return (
     <html>
       <Providers>
         <body className="max-w-screen-xl mx-auto">
-          <Header />
-          <Navbar />
-          {children}
+          {!loading ? (
+            <>
+              <Header />
+              <Navbar />
+              {children}
+              <Footer />
+            </>
+          ) : (
+            <Loader />
+          )}
           <AnalyticsWrapper />
-          <Footer />
           <Background />
         </body>
       </Providers>

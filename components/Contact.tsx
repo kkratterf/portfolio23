@@ -15,16 +15,16 @@ function Contact() {
         </h4>
         <ul className="space-y-2">
           <li className="contactitem">
-            <a href="https://www.linkedin.com/in/kkratter/">( L ) Linkedin</a>
+            <a href="https://www.linkedin.com/in/kkratter/">/ Linkedin</a>
           </li>
           <li className="contactitem">
-            <a href="https://www.behance.net/kkratter">( B ) Behance</a>
+            <a href="https://www.behance.net/kkratter">/ Behance</a>
           </li>
           <li className="contactitem">
-            <a href="https://www.instagram.com/kkratter/">( I ) Instagram</a>
+            <a href="https://www.instagram.com/kkratter/">/ Instagram</a>
           </li>
           <li className="contactitem">
-            <a href="mailto:kkratterf@gmail.com">( E ) kkratterf@gmail.com</a>
+            <a href="mailto:kkratterf@gmail.com">/ kkratterf@gmail.com</a>
           </li>
         </ul>
       </div>

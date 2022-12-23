@@ -24,7 +24,7 @@ function ProjectList({ projects }: Props) {
                 <Image
                   className="object-center object-cover group-hover:scale-105 duration-500"
                   src={urlFor(project.mainImage).url()}
-                  alt={project.author.name}
+                  alt={project.title}
                   fill
                 />
               </div>

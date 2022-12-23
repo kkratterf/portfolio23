@@ -9,22 +9,49 @@ type Base = {
 }
 
 interface Project extends Base {
-    author: Author;
-    body: Block[];
-    categories: Category[];
-    mainImage: Image;
-    slug: Slug;
-    title: string;
-    description: string;
-    featured: boolean;
-    visible: boolean;
+  client: Client;
+  body: Block[];
+  categories: Category[];
+  team: Team[];
+  mainImage: Image;
+  slug: Slug;
+  title: string;
+  description: string;
+  featured: boolean;
+  visible: boolean;
 }
 
-interface Author extends Base {
-  bio: Block[];
-  image: Image;
+interface Client extends Base {
   name: string;
   slug: Slug;
+}
+
+interface Award extends Base {
+  title: string;
+  brand: string;
+  date: string;
+  description: text;
+}
+
+interface Certification extends Base {
+  title: string;
+  school: string;
+  date: string;
+  description: text;
+}
+
+interface Education extends Base {
+  title: string;
+  school: string;
+  fromto: string;
+  description: text;
+}
+
+interface Experience extends Base {
+  role: string;
+  brand: string;
+  fromto: string;
+  description: text;
 }
 
 interface Image {
@@ -60,6 +87,11 @@ interface Span {
 interface Category extends Base {
     description: string;
     title: string;
+}
+
+interface Team extends Base {
+  name: string;
+  slug: Slug;
 }
 
 interface MainImage {

@@ -54,18 +54,64 @@
   }
 
   .background {
-        animation: move-1 20s ease-in-out infinite;
+        animation: background_move 30s ease-in-out infinite;
         transform-origin: 50% 50%;
-        -webkit-animation: move-1 40s ease-in-out infinite;
+        -webkit-animation: background_move 30s ease-in-out infinite;
+}
+
+  @keyframes background_move {
+        0%  { transform: scale(1) rotate(90deg) translate(40vw, -30vh); -webkit-transform: scale(1) rotate(90deg) translate(40vw, -30vh); -moz-transform: scale(1) rotate(90deg) translate(40vw, -30vh); -ms-transform: scale(1) rotate(90deg) translate(40vw, -30vh); -o-transform: scale(1) rotate(90deg) translate(40vw, -30vh); }
+        24%  { transform: scale(1) rotate(90deg) translate(12vw, -90vh); -webkit-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -moz-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -ms-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -o-transform: scale(1) rotate(90deg) translate(12vw, -90vh); }
+        28%  { transform: scale(1) rotate(90deg) translate(12vw, -90vh); -webkit-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -moz-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -ms-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -o-transform: scale(1) rotate(90deg) translate(12vw, -90vh); }
+        54%  { transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -webkit-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -moz-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -ms-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -o-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); }
+        56%  { transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -webkit-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -moz-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -ms-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -o-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); }
+        74% { transform: scale(1) rotate(180deg) translate(100px, -140px); -webkit-transform: scale(1) rotate(180deg) translate(100px, -140px); -moz-transform: scale(1) rotate(180deg) translate(100px, -140px); -ms-transform: scale(1) rotate(180deg) translate(100px, -140px); -o-transform: scale(1) rotate(180deg) translate(100px, -140px); }
+        100%  { transform: scale(1) rotate(90deg) translate(40vw, -30vh); -webkit-transform: scale(1) rotate(90deg) translate(40vw, -30vh); -moz-transform: scale(1) rotate(90deg) translate(40vw, -30vh); -ms-transform: scale(1) rotate(90deg) translate(40vw, -30vh); -o-transform: scale(1) rotate(90deg) translate(40vw, -30vh); }
+  }
+
+  .hello {
+        animation: hello 7s ease-in-out;
+        -webkit-animation: hello 7s ease-in-out;
+}
+
+    @keyframes hello {
+        0%   {
+            opacity: 0;
+}
+        20%  {
+            opacity: 0;
+}
+        60% {
+            opacity: 1;  
+}
+        92% {
+            opacity: 1;  
+}
+        100% {
+          opacity: 0;
+        }
     }
 
-  @keyframes move-1 {
-        0%   { transform: scale(1) rotate(180deg) translate(100px, -140px); -webkit-transform: scale(1) rotate(180deg) translate(100px, -140px); -moz-transform: scale(1) rotate(180deg) translate(100px, -140px); -ms-transform: scale(1) rotate(180deg) translate(100px, -140px); -o-transform: scale(1) rotate(180deg) translate(100px, -140px); }
-        38%  { transform: scale(1) translate(80vw, 50vh); -webkit-transform: scale(1) translate(80vw, 50vh); -moz-transform: scale(1) translate(80vw, 50vh); -ms-transform: scale(1) translate(80vw, 50vh); -o-transform: scale(1) translate(80vw, 50vh); }
-        40%  { transform: scale(1) translate(80vw, 50vh); -webkit-transform: scale(1) translate(80vw, 50vh); -moz-transform: scale(1) translate(80vw, 50vh); -ms-transform: scale(1) translate(80vw, 50vh); -o-transform: scale(1) translate(80vw, 50vh); }
-        78%  { transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -webkit-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -moz-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -ms-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -o-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); }
-        80%  { transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -webkit-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -moz-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -ms-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -o-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); }
-        95%  { transorm:scale(1) rotate(180deg) translate(-100px, 180px);}
-        100% { transform: scale(1) rotate(180deg) translate(100px, -140px); -webkit-transform: scale(1) rotate(180deg) translate(100px, -140px); -moz-transform: scale(1) rotate(180deg) translate(100px, -140px); -ms-transform: scale(1) rotate(180deg) translate(100px, -140px); -o-transform: scale(1) rotate(180deg) translate(100px, -140px); }
+    .iam {
+        animation: iam 7s ease-in-out;
+        -webkit-animation: iam 7s ease-in-out;
+}
+
+    @keyframes iam {
+        0%   {
+            opacity: 0;
+        }
+        60%  {
+            opacity: 0;
+        }
+        73% {
+            opacity: 1;
+        }
+        92% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
     }
 }

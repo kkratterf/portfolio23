@@ -20,10 +20,10 @@ export default defineType({
       },
     }),
     defineField({
-      name: "author",
-      title: "Author",
+      name: "client",
+      title: "Client",
       type: "reference",
-      to: { type: "author" },
+      to: { type: "client" },
     }),
     defineField({
       name: "mainImage",
@@ -40,6 +40,12 @@ export default defineType({
       of: [{ type: "reference", to: { type: "category" } }],
     }),
     defineField({
+      name: "team",
+      title: "Team",
+      type: "array",
+      of: [{ type: "reference", to: { type: "team" } }],
+    }),
+    defineField({
       name: "featured",
       title: "Featured",
       type: "boolean",
@@ -50,9 +56,9 @@ export default defineType({
       type: "boolean",
     }),
     defineField({
-      name: "publishedAt",
-      title: "Published at",
-      type: "datetime",
+      name: "realizedAt",
+      title: "Realized at",
+      type: "date",
     }),
     defineField({
       name: "body",
@@ -64,12 +70,12 @@ export default defineType({
   preview: {
     select: {
       title: "title",
-      author: "author.name",
+      client: "client.name",
       media: "mainImage",
     },
     prepare(selection) {
-      const { author } = selection;
-      return { ...selection, subtitle: author && `by ${author}` };
+      const { client } = selection;
+      return { ...selection, subtitle: client && `for ${client}` };
     },
   },
 });

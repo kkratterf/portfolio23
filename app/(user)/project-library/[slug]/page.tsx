@@ -15,7 +15,7 @@ type Props = {
     };
 };
 
-export const revalidate = 3600;
+export const revalidate = 600;
 
 export async function generateStaticParams() {
   const query = groq`
@@ -38,8 +38,9 @@ async function ProjectPage({params: {slug}}: Props) {
     *[_type=='project' && slug.current == $slug][0]
     {
         ...,
-        author->,
-        categories[]->
+        client->,
+        categories[]->,
+        team[]->
     }
   `
 

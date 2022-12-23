@@ -1,10 +1,17 @@
+"use client"
 // Import core
 // Import third parts
+import { motion } from "framer-motion";
 // Import customs
 
 function Hero() {
   return (
-    <section className="flex relative mt-[60vh] z-20">
+    <motion.section
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, delay: 1 }}
+      className="flex relative mt-[60vh] z-20"
+    >
       <div>
         <h4 className="text-4xl">
           Hi, there. I am Federico, a digital product designer focus on user
@@ -19,7 +26,7 @@ function Hero() {
           what’s ahead.
         </h4>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

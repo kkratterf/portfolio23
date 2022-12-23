@@ -9,12 +9,11 @@ import PreviewSuspense from "../../../components/PreviewSuspense";
 import PreviewProjectList from "../../../components/PreviewProjectList";
 import ProjectList from "../../../components/ProjectList";
 
-export const revalidate = 3600;
+export const revalidate = 600;
 
 const query = groq`
   *[_type=='project' && visible == true] {
     ...,
-    author->,
     categories[]->
   } | order(_createdAt desc)
 `;
