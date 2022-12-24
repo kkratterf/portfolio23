@@ -56,6 +56,11 @@ export default defineType({
       type: "boolean",
     }),
     defineField({
+      name: "order",
+      title: "Order",
+      type: "number",
+    }),
+    defineField({
       name: "realizedAt",
       title: "Realized at",
       type: "date",

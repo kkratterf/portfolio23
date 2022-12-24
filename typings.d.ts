@@ -19,6 +19,7 @@ interface Project extends Base {
   description: string;
   featured: boolean;
   visible: boolean;
+  order: number;
 }
 
 interface Client extends Base {
@@ -52,6 +53,11 @@ interface Experience extends Base {
   brand: string;
   fromto: string;
   description: text;
+}
+
+interface Number {
+  _type: "number";
+  current: number;
 }
 
 interface Image {

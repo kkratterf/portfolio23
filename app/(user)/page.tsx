@@ -16,7 +16,7 @@ const query = groq`
   *[_type=='project' && featured == true && visible == true ] {
     ...,
     categories[]->,
-  } | order(_createdAt desc)
+  } | order(_order asc)
 `;
 
 const query_experience = groq`

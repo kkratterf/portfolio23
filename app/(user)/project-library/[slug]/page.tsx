@@ -69,10 +69,9 @@ async function ProjectPage({params: {slug}}: Props) {
           />
         </div>
         <ul className="space-y-2">
-          <li className="contactitem">( L ) Linkedin</li>
-          <li className="contactitem">( B ) Behance</li>
-          <li className="contactitem">( I ) Instagram</li>
-          <li className="contactitem">( E ) kkratterf@gmail.com</li>
+          <li className="contactitem">Membri</li>
+          <li className="contactitem">Prova</li>
+          <li className="contactitem">Prova</li>
         </ul>
       </section>
 

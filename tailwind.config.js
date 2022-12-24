@@ -22,7 +22,7 @@ module.exports = {
         DEFAULT: "#E93685",
       },
       azure: {
-        DEFAULT: "#E3EDFF",
+        DEFAULT: "#D6E4FF",
         dark: "#3C6CC2",
       },
       white: {
