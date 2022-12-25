@@ -9,12 +9,12 @@ function Hero() {
     <motion.section
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1, delay: 1 }}
+      transition={{ duration: 2, delay: 1 }}
       className="flex relative mt-[60vh] z-20"
     >
       <div>
         <h4 className="text-4xl">
-          Hi, there. I am Federico, a digital product designer focus on user
+          <span className="italic">Hello</span>, I am Federico, a digital product designer focus on user
           experience, user interface and interaction. Im love also frontend
           development and photography. I have been creating digital design over
           past 3 years. My work spans across brandings to digital UI/UX, as well

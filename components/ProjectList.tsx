@@ -19,7 +19,7 @@ function ProjectList({ projects }: Props) {
             route={`/project-library/${project.slug.current}`}
             key={project._id}
           >
-            <div className="group cursor-pointer space-y-4">
+            <div className="group cursor-pointer opacity-70 hover:opacity-100 duration-500 transition space-y-4">
               <div className="relative w-full h-124 aspect-w-1 rounded-xl overflow-hidden">
                 <Image
                   className="object-center object-cover group-hover:scale-105 duration-500"
@@ -28,7 +28,7 @@ function ProjectList({ projects }: Props) {
                   fill
                 />
               </div>
-              <div className="space-y-2 mx-1 group-hover:opacity-70 duration-500">
+              <div className="space-y-2 mx-1">
                 <h5 className="font-bold text-3xl">{project.title}</h5>
                 <div className="flex space-x-2">
                   {project.categories.map((category) => (

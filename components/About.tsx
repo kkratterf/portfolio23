@@ -44,8 +44,8 @@ function About() {
             src="/image/cover.jpg"
             className="layer object-cover self-center mx-auto rounded-xl"
             alt="Federico Kratter Thaler"
-            width={1400}
-            height={900}
+            width={1680}
+            height={1200}
           />
         </div>
       </div>

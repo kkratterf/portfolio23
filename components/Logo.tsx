@@ -9,7 +9,7 @@ function Logo() {
     <motion.header
       initial={{ y:-25, opacity:0}}
       animate={{ y:0, opacity:1}}
-      transition={{ duration: 1, delay:1}}
+      transition={{ duration: 2, delay:1}}
       className="flex"
     >
       <Link href="/" className="cursor-pointer">

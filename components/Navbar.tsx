@@ -8,8 +8,11 @@ import { motion } from "framer-motion";
 function Navbar() {
   return (
     <motion.nav
+      initial={{ x: 25, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 2, delay: 1 }}
     >
-      <ul className="space-y-1">
+      <motion.ul className="space-y-2">
         <li className="navitem">
           <Link href="/project-library" scroll={true}>
             Project library //
@@ -19,7 +22,7 @@ function Navbar() {
           <a href="mailto:kkratterf@gmail.com">Contact me //</a>
         </li>
         <PopButton />
-      </ul>
+      </motion.ul>
     </motion.nav>
   );
 }
