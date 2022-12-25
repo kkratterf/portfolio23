@@ -20,6 +20,7 @@ interface Project extends Base {
   featured: boolean;
   visible: boolean;
   order: number;
+  realizedAt: Date;
 }
 
 interface Client extends Base {

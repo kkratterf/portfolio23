@@ -52,12 +52,12 @@ async function ProjectPage({params: {slug}}: Props) {
         <div className="space-y-4">
           <div className="flex space-x-2">
             {project.categories.map((category) => (
-              <p className="text-xl font-medium" key={category._id}>
+              <h6 className="text-xl font-medium" key={category._id}>
                 {category.title}
-              </p>
+              </h6>
             ))}
           </div>
-          <h3 className="font-bold text-5xl">{project.title}</h3>
+          <h1 className="font-bold text-6xl">{project.title}</h1>
         </div>
         <div className="w-full h-56 md:h-128 rounded-xl overflow-hidden">
           <Image
@@ -68,11 +68,26 @@ async function ProjectPage({params: {slug}}: Props) {
             height={900}
           />
         </div>
-        <ul className="space-y-2">
-          <li className="contactitem">Membri</li>
-          <li className="contactitem">Prova</li>
-          <li className="contactitem">Prova</li>
-        </ul>
+        <div className="space-y-1">
+          <div className="flex">
+            <p className="font-bold">
+              <span className="uppercase font-medium text-sm">Client // </span>{" "}
+              {project.client.name}
+            </p>
+          </div>
+          <div className="flex">
+            <p className="font-bold">
+              <span className="uppercase font-medium text-sm">Date // </span>{" "}
+              {project.client.name}
+            </p>
+          </div>
+          <div className="flex">
+            <p className="font-bold">
+              <span className="uppercase font-medium text-sm">Team // </span>{" "}
+              {project.client.name}
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className="mt-40">

@@ -8,16 +8,15 @@ import { motion } from "framer-motion";
 function Navbar() {
   return (
     <motion.nav
-      className="fixed top-20 right-20 rotate-90 origin-top-left translate-x-full"
     >
-      <ul className="flex space-x-6">
+      <ul className="space-y-1">
         <li className="navitem">
           <Link href="/project-library" scroll={true}>
-            Project library
+            Project library //
           </Link>
         </li>
         <li className="navitem">
-          <a href="mailto:kkratterf@gmail.com">Contact me</a>
+          <a href="mailto:kkratterf@gmail.com">Contact me //</a>
         </li>
         <PopButton />
       </ul>

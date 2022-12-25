@@ -4,7 +4,7 @@ import { AnalyticsWrapper } from "../components/AnalyticsWrapper";
 import Link from "next/link";
 // Import customs
 import "../styles/globals.css";
-import Header from "../components/Header";
+import Header from "../components/Logo";
 import Navbar from "../components/Navbar";
 import Background from "../components/Background";
 import Providers from "../components/Providers";

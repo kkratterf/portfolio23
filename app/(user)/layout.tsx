@@ -7,7 +7,6 @@ import { AnalyticsWrapper } from "../../components/AnalyticsWrapper";
 // Import customs
 import "../../styles/globals.css";
 import Header from "../../components/Header";
-import Navbar from "../../components/Navbar";
 import Background from "../../components/Background";
 import Providers from "../../components/Providers";
 import Footer from "../../components/Footer";
@@ -28,11 +27,10 @@ export default function RootLayout({
   return (
     <html>
       <Providers>
-        <body className="max-w-screen-xl mx-auto">
+        <body className="max-w-screen-xl mx-auto px-6 overflow-x-hidden">
           {!loading ? (
             <>
               <Header />
-              <Navbar />
               {children}
               <Footer />
             </>

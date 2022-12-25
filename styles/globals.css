@@ -46,7 +46,7 @@
 @layer components {
 
   .navitem {
-    @apply cursor-pointer text-sm font-medium uppercase hover:opacity-70 text-brand dark:text-azure transition duration-500;
+    @apply cursor-pointer text-sm text-right font-medium uppercase hover:opacity-70 text-brand dark:text-azure transition duration-500;
   }
 
   .contactitem {

@@ -6,15 +6,16 @@ import Image from "next/image";
 import urlFor from "../lib/urlFor";
 
 export const RichTextComponents = {
-  type: {
+  types: {
     image: ({ value }: any) => {
       return (
-        <div className="">
+        <div className="relative flex w-full h-auto my-8 rounded-xl overflow-hidden">
           <Image
-            className=""
+            className="object-cover object-center"
             src={urlFor(value).url()}
             alt="Project Image"
-            fill
+            width={1400}
+            height={900}
           />
         </div>
       );
@@ -29,12 +30,25 @@ export const RichTextComponents = {
     ),
   },
   block: {
-    h1: ({ children }: any) => <h1 className="text-5xl mb-10">{children}</h1>,
-    h2: ({ children }: any) => <h2 className="">{children}</h2>,
-    h3: ({ children }: any) => <h3 className="">{children}</h3>,
-    h4: ({ children }: any) => <h4 className="">{children}</h4>,
-    h5: ({ children }: any) => <h5 className="">{children}</h5>,
-    h6: ({ children }: any) => <h6 className="">{children}</h6>,
+    h1: ({ children }: any) => (
+      <h1 className="text-6xl font-bold mt-20 mb-6">{children}</h1>
+    ),
+    h2: ({ children }: any) => (
+      <h2 className="text-5xl font-bold mt-20 mb-6">{children}</h2>
+    ),
+    h3: ({ children }: any) => (
+      <h3 className="text-4xl font-bold mt-20 mb-6">{children}</h3>
+    ),
+    h4: ({ children }: any) => (
+      <h4 className="text-3xl font-bold mt-10 mb-6">{children}</h4>
+    ),
+    h5: ({ children }: any) => (
+      <h5 className="text-2xl font-bold mt-10 mb-4">{children}</h5>
+    ),
+    h6: ({ children }: any) => (
+      <h6 className="text-xl font-bold mt-10 mb-4">{children}</h6>
+    ),
+    p: ({ children }: any) => <p className="font-medium">{children}</p>,
     blockquote: ({ children }: any) => (
       <blockquote className="">{children}</blockquote>
     ),
