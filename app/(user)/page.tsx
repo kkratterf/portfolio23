@@ -10,13 +10,13 @@ import Experience from "../../components/Experience";
 import Contact from "../../components/Contact";
 import FeaturedProjectList from "../../components/FeaturedProjectList";
 
-export const revalidate = 600;
+export const revalidate = 6000;
 
 const query = groq`
   *[_type=='project' && featured == true && visible == true ] {
     ...,
-    categories[]->,
-  } | order(_order asc)
+    category->,
+  } | order(_order desc)
 `;
 
 const query_experience = groq`
@@ -38,7 +38,7 @@ const query_certification = groq`
 `;
 
 const query_awards = groq`
-  *[_type=='awards'] {
+  *[_type=='award'] {
     ...,
   } | order(_createdAt desc)
 `;

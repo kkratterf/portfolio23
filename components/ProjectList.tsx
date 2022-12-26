@@ -32,11 +32,7 @@ function ProjectList({ projects }: Props) {
                 <h5 className="font-bold text-2xl sm:text-3xl">
                   {project.title}
                 </h5>
-                <div className="flex space-x-2">
-                  {project.categories.map((category) => (
-                    <p key={category._id}>{category.title}</p>
-                  ))}
-                </div>
+                <p>{project.category.title}</p>
               </div>
             </div>
           </ClientSideRoute>

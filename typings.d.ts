@@ -11,8 +11,8 @@ type Base = {
 interface Project extends Base {
   client: Client;
   body: Block[];
-  categories: Category[];
-  team: Team[];
+  category: Category;
+  team: Team;
   mainImage: Image;
   slug: Slug;
   title: string;

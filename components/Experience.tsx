@@ -24,8 +24,9 @@ function Experience({ experiences, educations, certifications, awards }: Props) 
           certifications={certifications}
           awards={awards}
         />
+        
         <h4 className="text-2xl sm:text-4xl">
-          Ancora curioso? Scarica il mio
+          Not enough? Here is my
             <a
               className="ml-1 sm:ml-2 underline underline-offset-8 cursor-pointer sm:opacity-70 sm:hover:opacity-100 transition duration-500"
               href="image/KratterThalerFederico_CV.pdf"

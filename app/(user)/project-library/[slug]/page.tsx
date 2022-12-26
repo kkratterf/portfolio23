@@ -15,7 +15,7 @@ type Props = {
     };
 };
 
-export const revalidate = 600;
+export const revalidate = 6000;
 
 export async function generateStaticParams() {
   const query = groq`
@@ -39,8 +39,8 @@ async function ProjectPage({params: {slug}}: Props) {
     {
         ...,
         client->,
-        categories[]->,
-        team[]->
+        category->,
+        team->
     }
   `
 
@@ -51,14 +51,9 @@ async function ProjectPage({params: {slug}}: Props) {
       <section className="space-y-6 sm:space-y-10">
         <div className="space-y-3 sm:space-y-4">
           <div className="flex space-x-2">
-            {project.categories.map((category) => (
-              <h6
-                className="text-base sm:text-xl font-medium"
-                key={category._id}
-              >
-                {category.title}
-              </h6>
-            ))}
+            <h6 className="text-base sm:text-xl font-medium">
+                {project.category.title}
+            </h6>
           </div>
           <h1 className="font-bold text-4xl sm:text-6xl">{project.title}</h1>
         </div>

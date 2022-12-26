@@ -9,13 +9,13 @@ import PreviewSuspense from "../../../components/PreviewSuspense";
 import PreviewProjectList from "../../../components/PreviewProjectList";
 import ProjectList from "../../../components/ProjectList";
 
-export const revalidate = 600;
+export const revalidate = 6000;
 
 const query = groq`
   *[_type=='project' && visible == true] {
     ...,
-    categories[]->
-  } | order(_createdAt desc)
+    category->
+  } | order(_order desc)
 `;
 
 export default async function LibraryPage() {

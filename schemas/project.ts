@@ -34,16 +34,16 @@ export default defineType({
       },
     }),
     defineField({
-      name: "categories",
-      title: "Categories",
-      type: "array",
-      of: [{ type: "reference", to: { type: "category" } }],
+      name: "category",
+      title: "Category",
+      type: "reference",
+      to: { type: "category" },
     }),
     defineField({
       name: "team",
       title: "Team",
-      type: "array",
-      of: [{ type: "reference", to: { type: "team" } }],
+      type: "reference",
+      to: { type: "team" },
     }),
     defineField({
       name: "featured",

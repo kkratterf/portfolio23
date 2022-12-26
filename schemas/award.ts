@@ -34,7 +34,7 @@ export default defineType({
     },
     prepare(selection) {
       const { brand } = selection;
-      return { ...selection, subtitle: brand && `at ${brand}` };
+      return { ...selection, subtitle: brand && `from ${brand}` };
     },
   },
 });
