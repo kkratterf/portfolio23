@@ -37,6 +37,9 @@ module.exports = {
         136: "64rem",
         148: "80rem",
       },
+      lineHeight: {
+        "custom": "1.25",
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],

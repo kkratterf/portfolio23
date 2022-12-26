@@ -47,50 +47,52 @@ async function ProjectPage({params: {slug}}: Props) {
   const project: Project = await client.fetch(query, { slug });
 
   return (
-    <article className="mt-[60vh] relative z-40">
-      <section className="space-y-10">
-        <div className="space-y-4">
+    <article className="mt-[40vh] sm:mt-[60vh] relative z-40">
+      <section className="space-y-6 sm:space-y-10">
+        <div className="space-y-3 sm:space-y-4">
           <div className="flex space-x-2">
             {project.categories.map((category) => (
-              <h6 className="text-xl font-medium" key={category._id}>
+              <h6
+                className="text-base sm:text-xl font-medium"
+                key={category._id}
+              >
                 {category.title}
               </h6>
             ))}
           </div>
-          <h1 className="font-bold text-6xl">{project.title}</h1>
+          <h1 className="font-bold text-4xl sm:text-6xl">{project.title}</h1>
         </div>
-        <div className="w-full h-56 md:h-128 rounded-xl overflow-hidden">
+        <div className="relative w-full h-116 md:h-128 rounded-xl overflow-hidden">
           <Image
             src={urlFor(project.mainImage).url()}
-            className="layer object-cover self-center mx-auto rounded-xl"
+            className="object-center object-cover"
             alt="Federico Kratter Thaler"
-            width={1400}
-            height={900}
+            fill
           />
         </div>
         <div className="space-y-1">
           <div className="flex">
             <p className="font-bold">
-              <span className="uppercase font-medium text-sm">Client // </span>{" "}
+              <span className="uppercase font-medium text-sm">Client // </span>
               {project.client.name}
             </p>
           </div>
           <div className="flex">
             <p className="font-bold">
-              <span className="uppercase font-medium text-sm">Date // </span>{" "}
+              <span className="uppercase font-medium text-sm">Date // </span>
               {project.client.name}
             </p>
           </div>
           <div className="flex">
             <p className="font-bold">
-              <span className="uppercase font-medium text-sm">Team // </span>{" "}
+              <span className="uppercase font-medium text-sm">Team // </span>
               {project.client.name}
             </p>
           </div>
         </div>
       </section>
 
-      <section className="mt-40">
+      <section className="mt-20 sm:mt-40">
         <PortableText value={project.body} components={RichTextComponents} />
       </section>
     </article>

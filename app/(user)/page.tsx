@@ -53,7 +53,7 @@ export default async function HomePage() {
   const awards = await client.fetch(query_awards);
   
   return (
-    <div className="space-y-96">
+    <div className="space-y-40 sm:space-y-96 overflow-x-hidden">
       <Hero />
       <FeaturedProjectList projects={projects} />
       <About />

@@ -23,9 +23,19 @@ function PopButton() {
   return (
     <>
       {currentTheme === "dark" ? (
-        <li className="navitem" onClick={() => setTheme("light")}>Make it dark //</li>
+        <li
+          className="navitem transition duration-500"
+          onClick={() => setTheme("light")}
+        >
+          Make it dark //
+        </li>
       ) : (
-        <li className="navitem" onClick={() => setTheme("dark")}>Make it pop //</li>
+        <li
+          className="navitem transition duration-500"
+          onClick={() => setTheme("dark")}
+        >
+          Make it pop //
+        </li>
       )}
     </>
   );
