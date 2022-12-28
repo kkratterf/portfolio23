@@ -6,7 +6,7 @@ function Loader() {
 
   return (
     <div className="loader flex items-center fixed top-0 left-0 cursor-wait select-none w-full h-full z-50">
-      <p className="text-center mx-auto text-4xl leading-normal space-y-4 font-medium z-40">
+      <p className="text-center mx-auto text-3xl leading-normal space-y-4 font-medium z-40">
         <span className="hello">
           <span className="italic">Hello</span>,
         </span>

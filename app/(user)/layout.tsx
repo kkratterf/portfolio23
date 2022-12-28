@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { AnalyticsWrapper } from "../../components/AnalyticsWrapper";
 // Import customs
 import "../../styles/globals.css";
+import "../../styles/font.css";
 import Header from "../../components/Header";
 import Background from "../../components/Background";
 import Providers from "../../components/Providers";
