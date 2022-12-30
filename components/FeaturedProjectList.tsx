@@ -3,7 +3,6 @@
 // Import core
 // Import third parts
 import Image from "next/image";
-import { motion } from "framer-motion";
 // Import customs
 import urlFor from "../lib/urlFor";
 import { Project } from "../typings";
@@ -15,25 +14,14 @@ type Props = {
 
 function FeaturedProjectList({ projects }: Props) {
   return (
-    <motion.section className="relative z-30 space-y-20 sm:space-y-40">
-      <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 2, delay: 0.25 }}
-      >
+    <section className="relative z-30 space-y-20 sm:space-y-40">
+      <div>
         <h3 className="text-6xl sm:text-9xl font-bold">
           Delightful and intuitive human-centered experiences through innovation
           and product strategy.
         </h3>
-      </motion.div>
-      <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 2, delay: 0.25 }}
-        className="grid grid-cols-1 gap-y-10 sm:gap-y-20 gap-x-6 2xl:gap-x-10 sm:grid-cols-2 xl:grid-cols-3"
-      >
+      </div>
+      <div className="grid grid-cols-1 gap-y-10 sm:gap-y-20 gap-x-6 2xl:gap-x-10 sm:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
           <ClientSideRoute
             route={`/project-library/${project.slug.current}`}
@@ -52,13 +40,13 @@ function FeaturedProjectList({ projects }: Props) {
                 <h5 className="font-bold text-2xl sm:text-3xl">
                   {project.title}
                 </h5>
-                <p>{project.category.title}</p>
+                <p className="font-medium">{project.category.title}</p>
               </div>
             </div>
           </ClientSideRoute>
         ))}
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 }
 

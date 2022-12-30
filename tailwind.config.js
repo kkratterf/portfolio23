@@ -22,7 +22,7 @@ module.exports = {
         DEFAULT: "#E93685",
       },
       azure: {
-        DEFAULT: "#D6D4E7",
+        DEFAULT: "#D6E4FF",
         dark: "#3C6CC2",
       },
       white: {
@@ -38,8 +38,7 @@ module.exports = {
         148: "80rem",
       },
       lineHeight: {
-        "custom": "1.1",
-        
+        custom: "1.1",
       },
     },
   },

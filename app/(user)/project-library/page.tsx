@@ -15,7 +15,7 @@ const query = groq`
   *[_type=='project' && visible == true] {
     ...,
     category->
-  } | order(_order desc)
+  } | order(order asc)
 `;
 
 export default async function LibraryPage() {

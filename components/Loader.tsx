@@ -10,7 +10,7 @@ function Loader() {
         <span className="hello">
           <span className="italic">Hello</span>,
         </span>
-        <br className="sm:hidden"></br>
+        <br className="md:hidden"></br>
         <span className="iam ml-4 mt-4">
           I am <span className="text-red">Federico</span>
         </span>

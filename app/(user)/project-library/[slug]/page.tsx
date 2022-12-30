@@ -4,15 +4,16 @@ import { groq } from "next-sanity";
 import Image from "next/image";
 import { client } from "../../../../lib/sanity.client";
 import urlFor from "../../../../lib/urlFor";
-import { PortableText } from "@portabletext/react"
+import { PortableText } from "@portabletext/react";
+import { motion } from "framer-motion";
 // Import customs
 import { Project } from "../../../../typings";
 import { RichTextComponents } from "../../../../components/RichTextComponents";
 
 type Props = {
-    params: {
-        slug: string;
-    };
+  params: {
+    slug: string;
+  };
 };
 
 export const revalidate = 6000;
@@ -28,12 +29,12 @@ export async function generateStaticParams() {
   const slugs: Project[] = await client.fetch(query);
   const slugRoutes = slugs.map((slug) => slug.slug.current);
 
-  return slugRoutes.map(slug => ({
+  return slugRoutes.map((slug) => ({
     slug,
   }));
 }
 
-async function ProjectPage({params: {slug}}: Props) {
+async function ProjectPage({ params: { slug } }: Props) {
   const query = groq`
     *[_type=='project' && slug.current == $slug][0]
     {
@@ -42,7 +43,7 @@ async function ProjectPage({params: {slug}}: Props) {
         category->,
         team->
     }
-  `
+  `;
 
   const project: Project = await client.fetch(query, { slug });
 
@@ -64,28 +65,6 @@ async function ProjectPage({params: {slug}}: Props) {
               alt="Federico Kratter Thaler"
               fill
             />
-          </div>
-          <div className="space-y-1">
-            <div className="flex">
-              <p className="font-bold">
-                <span className="uppercase font-medium text-sm">
-                  Client //{" "}
-                </span>
-                {project.client.name}
-              </p>
-            </div>
-            <div className="flex">
-              <p className="font-bold">
-                <span className="uppercase font-medium text-sm">Date // </span>
-                {project.client.name}
-              </p>
-            </div>
-            <div className="flex">
-              <p className="font-bold">
-                <span className="uppercase font-medium text-sm">Team // </span>
-                {project.client.name}
-              </p>
-            </div>
           </div>
         </section>
 

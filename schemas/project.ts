@@ -77,10 +77,14 @@ export default defineType({
       title: "title",
       client: "client.name",
       media: "mainImage",
+      visible: "visible"
     },
     prepare(selection) {
-      const { client } = selection;
-      return { ...selection, subtitle: client && `for ${client}` };
+      const { client, } = selection;
+      return {
+        ...selection,
+        subtitle: client && `for ${client}`
+      };
     },
   },
 });

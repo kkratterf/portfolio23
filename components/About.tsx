@@ -3,18 +3,13 @@
 // Import core
 // Import third parts
 import Image from "next/image";
-import { motion } from "framer-motion";
 // Import customs
 
 
 function About() {
   return (
-    <motion.section className="flex relative z-20">
-      <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 2, delay: 0.25 }}
+    <section className="flex relative z-20">
+      <div
         className="space-y-20 sm:space-y-40"
       >
         <h3 className="text-6xl sm:text-9xl font-bold">
@@ -48,11 +43,7 @@ function About() {
             Partner, another milanese consulting firm.
           </h4>
         </div>
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2, delay: 0.25 }}
+        <div
           className="relative w-full h-96 sm:h-124 md:h-128 rounded-xl overflow-hidden"
         >
           <Image
@@ -61,9 +52,9 @@ function About() {
             alt="Federico Kratter Thaler"
             fill
           />
-        </motion.div>
-      </motion.div>
-    </motion.section>
+        </div>
+      </div>
+    </section>
   );
 }
 
