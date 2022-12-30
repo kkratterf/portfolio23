@@ -47,50 +47,52 @@ async function ProjectPage({params: {slug}}: Props) {
   const project: Project = await client.fetch(query, { slug });
 
   return (
-    <article className="mt-[40vh] sm:mt-[60vh] relative z-40">
-      <section className="space-y-6 sm:space-y-10">
-        <div className="space-y-3 sm:space-y-4">
-          <div className="flex space-x-2">
-            <h6 className="text-base sm:text-xl font-medium">
+      <article className="mt-[40vh] sm:mt-[60vh] relative z-40">
+        <section className="space-y-6 sm:space-y-10">
+          <div className="space-y-3 sm:space-y-4">
+            <div className="flex space-x-2">
+              <h6 className="text-base sm:text-xl font-medium">
                 {project.category.title}
-            </h6>
+              </h6>
+            </div>
+            <h1 className="font-bold text-4xl sm:text-6xl">{project.title}</h1>
           </div>
-          <h1 className="font-bold text-4xl sm:text-6xl">{project.title}</h1>
-        </div>
-        <div className="relative w-full h-116 md:h-128 rounded-xl overflow-hidden">
-          <Image
-            src={urlFor(project.mainImage).url()}
-            className="object-center object-cover"
-            alt="Federico Kratter Thaler"
-            fill
-          />
-        </div>
-        <div className="space-y-1">
-          <div className="flex">
-            <p className="font-bold">
-              <span className="uppercase font-medium text-sm">Client // </span>
-              {project.client.name}
-            </p>
+          <div className="relative w-full h-116 md:h-128 bg-grey dark:bg-pop rounded-xl overflow-hidden">
+            <Image
+              src={urlFor(project.mainImage).url()}
+              className="object-center object-cover rounded-xl"
+              alt="Federico Kratter Thaler"
+              fill
+            />
           </div>
-          <div className="flex">
-            <p className="font-bold">
-              <span className="uppercase font-medium text-sm">Date // </span>
-              {project.client.name}
-            </p>
+          <div className="space-y-1">
+            <div className="flex">
+              <p className="font-bold">
+                <span className="uppercase font-medium text-sm">
+                  Client //{" "}
+                </span>
+                {project.client.name}
+              </p>
+            </div>
+            <div className="flex">
+              <p className="font-bold">
+                <span className="uppercase font-medium text-sm">Date // </span>
+                {project.client.name}
+              </p>
+            </div>
+            <div className="flex">
+              <p className="font-bold">
+                <span className="uppercase font-medium text-sm">Team // </span>
+                {project.client.name}
+              </p>
+            </div>
           </div>
-          <div className="flex">
-            <p className="font-bold">
-              <span className="uppercase font-medium text-sm">Team // </span>
-              {project.client.name}
-            </p>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="mt-20 sm:mt-40">
-        <PortableText value={project.body} components={RichTextComponents} />
-      </section>
-    </article>
+        <section className="mt-20 sm:mt-40">
+          <PortableText value={project.body} components={RichTextComponents} />
+        </section>
+      </article>
   );
 }
 

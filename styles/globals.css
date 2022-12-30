@@ -10,27 +10,27 @@
   }
 
   h1 {
-    @apply text-brand dark:text-azure transition duration-500;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom;
   }
 
   h2 {
-    @apply text-brand dark:text-azure transition duration-500;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom;
   }
 
   h3 {
-    @apply text-brand dark:text-azure transition duration-500;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom;
   }
 
   h4 {
-    @apply text-brand dark:text-azure transition duration-500;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom;
   }
 
   h5 {
-    @apply text-brand dark:text-azure transition duration-500;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom;
   }
 
   h6 {
-    @apply text-brand dark:text-azure transition duration-500;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom;
   }
 
   p {
@@ -62,7 +62,7 @@
   @keyframes background_move {
         0%  { transform: scale(1) rotate(90deg) translate(40vw, -30vh); -webkit-transform: scale(1) rotate(90deg) translate(40vw, -30vh); -moz-transform: scale(1) rotate(90deg) translate(40vw, -30vh); -ms-transform: scale(1) rotate(90deg) translate(40vw, -30vh); -o-transform: scale(1) rotate(90deg) translate(40vw, -30vh); }
         24%  { transform: scale(1) rotate(90deg) translate(12vw, -90vh); -webkit-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -moz-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -ms-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -o-transform: scale(1) rotate(90deg) translate(12vw, -90vh); }
-        28%  { transform: scale(1) rotate(90deg) translate(12vw, -90vh); -webkit-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -moz-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -ms-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -o-transform: scale(1) rotate(90deg) translate(12vw, -90vh); }
+        27%  { transform: scale(1) rotate(90deg) translate(12vw, -90vh); -webkit-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -moz-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -ms-transform: scale(1) rotate(90deg) translate(12vw, -90vh); -o-transform: scale(1) rotate(90deg) translate(12vw, -90vh); }
         54%  { transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -webkit-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -moz-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -ms-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -o-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); }
         56%  { transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -webkit-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -moz-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -ms-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); -o-transform: scale(1) rotate(90deg) translate(-10vw, -20vh); }
         74% { transform: scale(1) rotate(180deg) translate(100px, -140px); -webkit-transform: scale(1) rotate(180deg) translate(100px, -140px); -moz-transform: scale(1) rotate(180deg) translate(100px, -140px); -ms-transform: scale(1) rotate(180deg) translate(100px, -140px); -o-transform: scale(1) rotate(180deg) translate(100px, -140px); }
@@ -81,7 +81,7 @@
         20%  {
             opacity: 0;
 }
-        60% {
+        50% {
             opacity: 1;  
 }
         92% {
@@ -101,10 +101,10 @@
         0%   {
             opacity: 0;
         }
-        60%  {
+        50%  {
             opacity: 0;
         }
-        73% {
+        65% {
             opacity: 1;
         }
         92% {

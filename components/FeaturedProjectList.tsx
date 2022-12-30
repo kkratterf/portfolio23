@@ -16,9 +16,7 @@ function FeaturedProjectList({ projects }: Props) {
   return (
     <section className="relative z-30 space-y-20 sm:space-y-40">
       <div>
-        <h3
-          className="text-6xl sm:text-9xl font-bold "
-        >
+        <h3 className="text-6xl sm:text-9xl font-bold">
           Delightful and intuitive human-centered experiences through innovation
           and product strategy.
         </h3>
@@ -30,17 +28,19 @@ function FeaturedProjectList({ projects }: Props) {
             key={project._id}
           >
             <div className="group cursor-pointer sm:opacity-70 sm:hover:opacity-100 duration-500 transition space-y-3 sm:space-y-4">
-              <div className="relative w-full h-116 sm:h-124 aspect-w-1 rounded-xl overflow-hidden">
+              <div className="relative w-full h-116 bg-grey dark:bg-pop sm:h-124 aspect-w-1 rounded-xl overflow-hidden">
                 <Image
-                  className="object-center object-cover group-hover:scale-105 transition duration-500"
+                  className="object-center object-cover group-hover:scale-105 transition duration-500 rounded-xl"
                   src={urlFor(project.mainImage).url()}
                   alt={project.title}
                   fill
                 />
               </div>
               <div className="space-y-1 sm:space-y-2 mx-1">
-                <h5 className="font-bold text-2xl sm:text-3xl">{project.title}</h5>
-                  <p>{project.category.title}</p>
+                <h5 className="font-bold text-2xl sm:text-3xl">
+                  {project.title}
+                </h5>
+                <p>{project.category.title}</p>
               </div>
             </div>
           </ClientSideRoute>

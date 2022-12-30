@@ -38,7 +38,8 @@ module.exports = {
         148: "80rem",
       },
       lineHeight: {
-        "custom": "1.25",
+        "custom": "1.1",
+        
       },
     },
   },
