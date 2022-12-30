@@ -1,13 +1,22 @@
+"use client"
+
 // Import core
 // Import third parts
 import Image from "next/image";
+import { motion } from "framer-motion";
 // Import customs
 
 
 function About() {
   return (
-    <section className="flex relative z-20">
-      <div className="space-y-20 sm:space-y-40">
+    <motion.section className="flex relative z-20">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2, delay: 0.25 }}
+        className="space-y-20 sm:space-y-40"
+      >
         <h3 className="text-6xl sm:text-9xl font-bold">
           Inspired by the words of Alessandro Mendini: I am not a designer, I am
           a dragon.
@@ -39,16 +48,22 @@ function About() {
             Partner, another milanese consulting firm.
           </h4>
         </div>
-        <div className="relative w-full h-96 sm:h-124 md:h-128 rounded-xl overflow-hidden">
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2, delay: 0.25 }}
+          className="relative w-full h-96 sm:h-124 md:h-128 rounded-xl overflow-hidden"
+        >
           <Image
             src="/image/cover.jpg"
             className="object-center object-cover"
             alt="Federico Kratter Thaler"
             fill
           />
-        </div>
-      </div>
-    </section>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 }
 
