@@ -10,10 +10,10 @@ function Hero() {
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2, delay: 1 }}
-      className="flex relative mt-[40vh] sm:mt-[60vh] z-20"
+      className="flex relative mt-[40vh] sm:mt-[60vh] z-20 overscroll-y-none"
     >
       <div>
-        <h4 className="text-3xl sm:text-5xl leading-normal">
+        <h4 className="text-3xl sm:text-5xl">
           <span className="italic">Hello</span>, I am Federico, a digital
           product designer focus on user experience, user interface and
           interaction. Im love also frontend development and photography. I have

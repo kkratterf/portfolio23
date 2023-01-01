@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Roobert TRIAL", "sans-serif"],
+      sans: ["PP Radio Grotesk", "sans-serif"],
     },
     colors: {
       transparent: "transparent",
@@ -38,7 +38,7 @@ module.exports = {
         148: "80rem",
       },
       lineHeight: {
-        custom: "1.1",
+        "custom": "1.1",
       },
     },
   },

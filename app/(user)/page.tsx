@@ -16,7 +16,7 @@ const query = groq`
   *[_type=='project' && featured == true && visible == true ] {
     ...,
     category->,
-  } | order(order desc)
+  } | order(order asc)
 `;
 
 const query_experience = groq`
@@ -53,7 +53,7 @@ export default async function HomePage() {
   const awards = await client.fetch(query_awards);
   
   return (
-    <div className="space-y-40 sm:space-y-96 overflow-x-hidden">
+    <div className="space-y-40 sm:space-y-96 overflow-hidden overscroll-none">
       <Hero />
       <FeaturedProjectList projects={projects} />
       <About />

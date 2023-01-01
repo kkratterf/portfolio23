@@ -1,5 +1,8 @@
+"use client";
+
 // Import core
 // Import third parts
+import { motion } from "framer-motion";
 // Import customs
 import { Experience, Education, Certification, Award } from "../typings";
 
@@ -10,10 +13,21 @@ type Props = {
   awards: Award[];
 };
 
-function ExperienceList({ experiences, educations, certifications, awards }: Props) {
+function ExperienceList({
+  experiences,
+  educations,
+  certifications,
+  awards,
+}: Props) {
   return (
-    <section className="relative z-30 space-y-10 sm:space-y-20">
-      <div className="space-y-4">
+    <motion.section className="relative z-30 space-y-10 sm:space-y-20">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 0.04 }}
+        viewport={{ once: true }}
+        className="space-y-4"
+      >
         <h4 className="text-sm sm:text-base font-medium uppercase">
           Experience
         </h4>
@@ -26,8 +40,14 @@ function ExperienceList({ experiences, educations, certifications, awards }: Pro
             <p className="text-sm font font-medium">{experience.description}</p>
           </div>
         ))}
-      </div>
-      <div className="space-y-4">
+      </motion.div>
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 0.04 }}
+        viewport={{ once: true }}
+        className="space-y-4"
+      >
         <h4 className="text-sm sm:text-base font-medium uppercase">
           Education
         </h4>
@@ -40,8 +60,14 @@ function ExperienceList({ experiences, educations, certifications, awards }: Pro
             <p className="text-sm font font-medium">{education.description}</p>
           </div>
         ))}
-      </div>
-      <div className="space-y-4">
+      </motion.div>
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 0.04 }}
+        viewport={{ once: true }}
+        className="space-y-4"
+      >
         <h4 className="text-sm sm:text-base font-medium uppercase">
           Certification
         </h4>
@@ -58,8 +84,14 @@ function ExperienceList({ experiences, educations, certifications, awards }: Pro
             </p>
           </div>
         ))}
-      </div>
-      <div className="space-y-4">
+      </motion.div>
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 0.04 }}
+        viewport={{ once: true }}
+        className="space-y-4"
+      >
         <h4 className="text-sm sm:text-base font-medium uppercase">Awards</h4>
         {awards.map((award) => (
           <div key={award._id} className="space-y-2">
@@ -70,8 +102,8 @@ function ExperienceList({ experiences, educations, certifications, awards }: Pro
             <p className="text-sm font font-medium">{award.description}</p>
           </div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 

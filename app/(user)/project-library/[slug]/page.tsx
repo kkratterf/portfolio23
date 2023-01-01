@@ -5,7 +5,6 @@ import Image from "next/image";
 import { client } from "../../../../lib/sanity.client";
 import urlFor from "../../../../lib/urlFor";
 import { PortableText } from "@portabletext/react";
-import { motion } from "framer-motion";
 // Import customs
 import { Project } from "../../../../typings";
 import { RichTextComponents } from "../../../../components/RichTextComponents";
@@ -48,7 +47,7 @@ async function ProjectPage({ params: { slug } }: Props) {
   const project: Project = await client.fetch(query, { slug });
 
   return (
-      <article className="mt-[40vh] sm:mt-[60vh] relative z-40">
+      <article className="relative mt-[40vh] sm:mt-[60vh] z-40">
         <section className="space-y-6 sm:space-y-10">
           <div className="space-y-3 sm:space-y-4">
             <div className="flex space-x-2">

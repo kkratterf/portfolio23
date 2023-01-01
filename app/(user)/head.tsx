@@ -2,6 +2,24 @@ export default function Head() {
   return (
     <>
       <title>Federico Kratter Thaler - Portfolio 2023</title>
+      <meta
+        name="description"
+        content="Hello, I am Federico, a digital product designer focus on user experience, user interface and interaction."
+      />
+      <meta
+        property="og:title"
+        content="Federico Kratter Thaler - Portfolio 2023"
+      />
+      <meta
+        property="og:description"
+        content="Hello, I am Federico, a digital product designer focus on user experience, user interface and interaction."
+      />
+      <meta property="og:url" content="https://kkratter.com" />
+      <meta property="og:image" content="/image/hello.jpg" />
+      <meta
+        property="og:image:secure_url"
+        content="http://www.kkratter.com/image/hello.jpg"
+      />
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="author" content="Federico Kratter Thaler" />
       <meta name="copyright" content="Federico Kratter Thaler"></meta>

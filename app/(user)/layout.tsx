@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html>
       <Providers>
-        <body className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 xl:px-16 overflow-x-hidden">
+        <body className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 xl:px-16 overflow-x-hidden scroll-smooth">
           {!loading ? (
             <>
               <Header />

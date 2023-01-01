@@ -9,9 +9,9 @@ export const RichTextComponents = {
   types: {
     image: ({ value }: any) => {
       return (
-        <div className="relative flex w-full h-auto my-8 rounded-xl overflow-hidden">
+        <div className="relative flex w-full h-auto my-10 rounded-xl overflow-hidden">
           <Image
-            className="object-cover object-center"
+            className="object-cover object-center rounded-xl"
             src={urlFor(value).url()}
             alt="Project Image"
             width={1400}
@@ -51,12 +51,20 @@ export const RichTextComponents = {
       </h4>
     ),
     h5: ({ children }: any) => (
-      <h5 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-10 mb-3 sm:mb-4">{children}</h5>
+      <h5 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-10 mb-3 sm:mb-4">
+        {children}
+      </h5>
     ),
     h6: ({ children }: any) => (
-      <h6 className="text-base sm:text-xl font-bold mt-6 sm:mt-10 mb-3 sm:mb-4">{children}</h6>
+      <h6 className="text-base sm:text-xl font-bold mt-6 sm:mt-10 mb-3 sm:mb-4">
+        {children}
+      </h6>
     ),
-    p: ({ children }: any) => <p className="font-medium">{children}</p>,
+    p: ({ children }: any) => (
+      <p className="text-base sm:text-xl font-medium max-w-screen-lg">
+        {children}
+      </p>
+    ),
     blockquote: ({ children }: any) => (
       <blockquote className="italic">{children}</blockquote>
     ),
