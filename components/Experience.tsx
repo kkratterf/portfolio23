@@ -49,7 +49,7 @@ function Experience({
           Not enough? Here is my
           <motion.a
             className="ml-1 sm:ml-2 underline underline-offset-8 cursor-pointer sm:opacity-70 sm:hover:opacity-100 transition duration-500"
-            href="image/KratterThalerFederico_CV.pdf"
+            href="image/FedericoKratterThaler_CV.pdf"
             download
           >
             curriculum
