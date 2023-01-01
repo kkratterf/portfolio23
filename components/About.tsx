@@ -59,7 +59,7 @@ function About() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 0.04 }}
           viewport={{ once: true }}
-          className="relative w-full h-96 sm:h-124 md:h-128 rounded-xl overflow-hidden"
+          className="relative w-full h-96 sm:h-124 md:h-128 bg-grey dark:bg-pop rounded-xl overflow-hidden"
         >
           <Image
             src="/image/cover.jpg"

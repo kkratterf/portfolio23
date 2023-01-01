@@ -33,7 +33,7 @@
     @apply text-brand dark:text-azure transition duration-500 leading-custom;
   }
 
-  p {
+  p, blockquote {
     @apply text-brand dark:text-azure transition duration-500;
   }
 

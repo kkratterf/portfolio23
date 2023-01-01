@@ -9,7 +9,7 @@ export const RichTextComponents = {
   types: {
     image: ({ value }: any) => {
       return (
-        <div className="relative flex w-full h-auto my-10 rounded-xl overflow-hidden">
+        <div className="relative flex w-full h-auto my-10 rounded-xl bg-grey dark:bg-pop overflow-hidden">
           <Image
             className="object-cover object-center rounded-xl"
             src={urlFor(value).url()}
@@ -61,12 +61,14 @@ export const RichTextComponents = {
       </h6>
     ),
     p: ({ children }: any) => (
-      <p className="text-base sm:text-xl font-medium max-w-screen-lg">
+      <p className="text-base sm:text-xl font-medium mb-4 max-w-screen-xl">
         {children}
       </p>
     ),
     blockquote: ({ children }: any) => (
-      <blockquote className="italic">{children}</blockquote>
+      <blockquote className="text-base sm:text-xl font-medium mb-4 max-w-screen-xl italic">
+        {children}
+      </blockquote>
     ),
   },
   marks: {
@@ -76,7 +78,11 @@ export const RichTextComponents = {
         : undefined;
 
       return (
-        <Link href={value.href} rel={rel} className="">
+        <Link
+          href={value.href}
+          rel={rel}
+          className="text-brand dark:text-azure transition duration-500 text-base sm:text-xl font-medium mb-4 underline underline-offset-8 opacity-70 hover:opacity-100"
+        >
           {children}
         </Link>
       );
