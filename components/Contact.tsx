@@ -3,6 +3,7 @@
 // Import core
 // Import third parts
 import { motion } from "framer-motion";
+import Link from "next/link";
 // Import customs
 
 function Contact() {
@@ -24,10 +25,19 @@ function Contact() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 2, delay: 0.04 }}
         viewport={{ once: true }}
+        className="space-y-2"
       >
         <h4 className="text-2xl sm:text-4xl">
           If anything of those sounds interesting, just feel free to reach out
-          to me. you are welcome.
+          to me. You are welcome.
+        </h4>
+        <h4 className="text-2xl sm:text-4xl">
+          Too lazy to scroll and want to go back to top?
+          <a href="#top">
+            <span className="ml-1 sm:ml-2 underline underline-offset-8 cursor-pointer sm:opacity-70 sm:hover:opacity-100 transition duration-500">
+              Don`t worry
+            </span>
+          </a>
         </h4>
       </motion.div>
       <motion.div
