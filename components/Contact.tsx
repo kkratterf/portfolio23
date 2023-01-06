@@ -46,16 +46,36 @@ function Contact() {
       >
         <ul className="space-y-2">
           <li className="contactitem">
-            <a href="https://www.linkedin.com/in/kkratter/">Ordinary people //</a>
+            <a href="https://www.linkedin.com/in/kkratter/" className="group">
+              Ordinary people //
+              <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
+                🥱
+              </span>
+            </a>
           </li>
           <li className="contactitem">
-            <a href="https://www.behance.net/kkratter">For creatives //</a>
+            <a href="https://www.behance.net/kkratter" className="group">
+              For creatives //
+              <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
+                🤯
+              </span>
+            </a>
           </li>
           <li className="contactitem">
-            <a href="https://www.instagram.com/kkratter/">Stalk me //</a>
+            <a href="https://www.instagram.com/kkratter/" className="group">
+              Stalk me //
+              <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
+                👀
+              </span>
+            </a>
           </li>
           <li className="contactitem">
-            <a href="mailto:kkratterf@gmail.com">Say hello //</a>
+            <a href="mailto:kkratterf@gmail.com" className="group">
+              Say hello //
+              <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
+                👋
+              </span>
+            </a>
           </li>
         </ul>
       </motion.div>
