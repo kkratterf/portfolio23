@@ -42,7 +42,7 @@ const Cursor: React.FC<{ cursorVariant: string }> = ({ cursorVariant }) => {
 
   return (
     <motion.div
-      className="bg-brand dark:bg-azure h-3 w-3 rounded-full fixed top-0 left-0 pointer-events-none z-50"
+      className="bg-brand dark:bg-azure invisible lg:visible h-3 w-3 rounded-full fixed top-0 left-0 pointer-events-none z-50"
       variants={variants}
       animate={cursorVariant}
     ></motion.div>

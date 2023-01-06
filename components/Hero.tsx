@@ -10,7 +10,7 @@ function Hero() {
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2, delay: 1 }}
-      className="flex relative mt-[40vh] sm:mt-[60vh] z-20 overscroll-y-none"
+      className="flex relative pt-[40vh] sm:pt-[60vh] z-20 overscroll-y-none"
     >
       <div>
         <h4 className="text-3xl sm:text-5xl">

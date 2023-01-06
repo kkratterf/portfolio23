@@ -36,7 +36,7 @@ function FeaturedProjectList({ projects }: Props) {
       >
         {projects.map((project) => (
           <ClientSideRoute
-            route={`/project-archive/${project.slug.current}`}
+            route={`/project-archive/${project.slug.current}#top`}
             key={project._id}
           >
             <div className="group cursor-pointer sm:opacity-70 sm:hover:opacity-100 duration-500 transition space-y-3 sm:space-y-4">

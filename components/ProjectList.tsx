@@ -19,7 +19,7 @@ function ProjectList({ projects }: Props) {
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2, delay: 1 }}
-      className="mt-[40vh] sm:mt-[60vh] relative z-50"
+      className="pt-[40vh] sm:pt-[60vh] relative z-50"
     >
       <motion.div className="grid grid-cols-1 gap-y-10 sm:gap-y-20 gap-x-6 2xl:gap-x-10 sm:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (

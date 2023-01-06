@@ -14,8 +14,8 @@ export const RichTextComponents = {
             className="object-cover object-center rounded-xl"
             src={urlFor(value).url()}
             alt="Project Image"
-            width={1400}
-            height={900}
+            width={1680}
+            height={1050}
           />
         </div>
       );

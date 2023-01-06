@@ -18,7 +18,7 @@ function Article(props: any) {
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2, delay: 1 }}
-      className="relative mt-[40vh] sm:mt-[60vh] z-40"
+      className="relative pt-[40vh] sm:pt-[60vh] z-40"
     >
       <article>
         <section className="space-y-6 sm:space-y-10">

@@ -3,7 +3,6 @@
 // Import core
 // Import third parts
 import { motion } from "framer-motion";
-import Link from "next/link";
 // Import customs
 
 function Contact() {
