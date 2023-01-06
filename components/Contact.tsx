@@ -8,7 +8,7 @@ import Link from "next/link";
 
 function Contact() {
   return (
-    <motion.section className="relative z-20 space-y-10 sm:space-y-20 mb-10">
+    <motion.section className="relative z-40 space-y-10 sm:space-y-20 pb-20">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -47,13 +47,13 @@ function Contact() {
       >
         <ul className="space-y-2">
           <li className="contactitem">
-            <a href="https://www.linkedin.com/in/kkratter/">Sei formale? Linkedin //</a>
+            <a href="https://www.linkedin.com/in/kkratter/">Ordinary people //</a>
           </li>
           <li className="contactitem">
-            <a href="https://www.behance.net/kkratter">Sei creativo? Behance //</a>
+            <a href="https://www.behance.net/kkratter">For creatives //</a>
           </li>
           <li className="contactitem">
-            <a href="https://www.instagram.com/kkratter/">Vuoi stalkerarmi? Instagram //</a>
+            <a href="https://www.instagram.com/kkratter/">Stalk me //</a>
           </li>
           <li className="contactitem">
             <a href="mailto:kkratterf@gmail.com">Say hello //</a>

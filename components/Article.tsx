@@ -8,6 +8,7 @@ import { PortableText } from "@portabletext/react";
 import { motion } from "framer-motion";
 // Import customs
 import { RichTextComponents } from "../components/RichTextComponents";
+import Link from "next/link";
 
 function Article(props: any) {
   const project = props.project
@@ -41,6 +42,16 @@ function Article(props: any) {
 
         <section className="mt-20 sm:mt-40">
           <PortableText value={project.body} components={RichTextComponents} />
+        </section>
+        <section>
+          <h4 className="text-2xl sm:text-4xl mt-20">
+            <Link
+              href="/project-archive"
+              className="underline underline-offset-8 cursor-pointer sm:opacity-70 sm:hover:opacity-100 transition duration-500"
+            >
+              Back to Archive
+            </Link>
+          </h4>
         </section>
       </article>
     </motion.section>

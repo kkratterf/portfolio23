@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <motion.section className="relative mt-40 mb-6 sm:mb-10 xl:mb-16 z-50">
+    <motion.section className="relative mt-40 mb-6 sm:mb-10 xl:mb-16 z-40">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
