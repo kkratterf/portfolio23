@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <motion.section className="relative z-40 space-y-10 sm:space-y-20 pb-20">
+    <motion.section className="relative z-40 space-y-10 sm:space-y-20 pb:10 sm:pb-20">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

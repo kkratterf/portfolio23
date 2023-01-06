@@ -24,16 +24,22 @@ function PopButton() {
     <>
       {currentTheme === "dark" ? (
         <li
-          className="navitem transition duration-500"
+          className="navitem transition duration-500 group"
           onClick={() => setTheme("light")}
         >
+          <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pr-2 not-italic">
+            🌑
+          </span>
           Make it dark //
         </li>
       ) : (
         <li
-          className="navitem transition duration-500"
+          className="navitem transition duration-500 group"
           onClick={() => setTheme("dark")}
         >
+          <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pr-2 not-italic">
+            🧨
+          </span>
           Make it pop //
         </li>
       )}
