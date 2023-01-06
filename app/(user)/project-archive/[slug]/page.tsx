@@ -5,7 +5,6 @@ import { client } from "../../../../lib/sanity.client";
 // Import customs
 import { Project } from "../../../../typings";
 import Article from "../../../../components/Article";
-import Contact from "../../../../components/Contact";
 
 type Props = {
   params: {

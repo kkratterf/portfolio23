@@ -7,17 +7,19 @@ import { motion } from "framer-motion";
 function Logo() {
   return (
     <motion.header
-      initial={{ y:-25, opacity:0}}
-      animate={{ y:0, opacity:1}}
-      transition={{ duration: 2, delay:1}}
+      initial={{ y: -25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 2, delay: 1 }}
       className="flex"
     >
       <Link href="/" className="cursor-pointer">
         <div className="space-y-1">
-          <h1 className="text-xl font-bold uppercase">
+          <h1 className="text-xl font-bold uppercase !cursor-pointer">
             Federico Kratter Thaler
           </h1>
-          <h2 className="font-medium">User Experience & Interaction Designer</h2>
+          <h2 className="font-medium !cursor-pointer">
+            User Experience & Interaction Designer
+          </h2>
         </div>
       </Link>
     </motion.header>

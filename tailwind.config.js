@@ -5,6 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
+  important: true,
   theme: {
     fontFamily: {
       sans: ["PP Radio Grotesk", "sans-serif"],
@@ -12,7 +13,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       grey: {
-        "light": "#202020",
+        light: "#202020",
         DEFAULT: "#191919",
       },
       brand: {

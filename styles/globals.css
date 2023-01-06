@@ -10,35 +10,35 @@
   }
 
   h1 {
-    @apply text-brand dark:text-azure transition duration-500 leading-custom;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom cursor-default;
   }
 
   h2 {
-    @apply text-brand dark:text-azure transition duration-500 leading-custom;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom cursor-default;
   }
 
   h3 {
-    @apply text-brand dark:text-azure transition duration-500 leading-custom;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom cursor-default;
   }
 
   h4 {
-    @apply text-brand dark:text-azure transition duration-500 leading-custom;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom cursor-default;
   }
 
   h5 {
-    @apply text-brand dark:text-azure transition duration-500 leading-custom;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom cursor-default;
   }
 
   h6 {
-    @apply text-brand dark:text-azure transition duration-500 leading-custom;
+    @apply text-brand dark:text-azure transition duration-500 leading-custom cursor-default;
   }
 
   p, blockquote {
-    @apply text-brand dark:text-azure transition duration-500;
+    @apply text-brand dark:text-azure transition duration-500 cursor-default;
   }
 
   li {
-    @apply text-brand dark:text-azure transition duration-500;
+    @apply text-brand dark:text-azure transition duration-500 cursor-default;
   }
 
 }
