@@ -70,7 +70,10 @@ function Contact() {
             </a>
           </li>
           <li className="contactitem">
-            <a href="mailto:kkratterf@gmail.com" className="group">
+            <a
+              href="mailto:kkratterf@gmail.com?subject=Say Hello!"
+              className="group"
+            >
               Say hello //
               <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
                 👋

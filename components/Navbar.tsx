@@ -22,7 +22,10 @@ function Navbar() {
           </Link>
         </li>
         <li className="navitem">
-          <a href="mailto:kkratterf@gmail.com" className="group">
+          <a
+            href="mailto:kkratterf@gmail.com?subject=Say Hello!"
+            className="group"
+          >
             <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pr-2 not-italic">
               👋
             </span>
