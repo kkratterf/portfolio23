@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 function About() {
   return (
-    <motion.section className="flex relative z-20">
+    <motion.section className="relative z-20">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -59,11 +59,11 @@ function About() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 0.04 }}
           viewport={{ once: true }}
-          className="relative w-full h-96 sm:h-124 md:h-128 bg-grey dark:bg-pop rounded-xl overflow-hidden"
+          className="relative w-full h-96 sm:h-124 md:h-128 bg-grey-light dark:bg-pop-dark rounded-xl overflow-hidden"
         >
           <Image
             src="/image/cover.jpg"
-            className="object-center object-cover"
+            className="object-center object-cover rounded-xl"
             alt="Federico Kratter Thaler"
             fill
           />

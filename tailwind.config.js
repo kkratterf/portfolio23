@@ -12,6 +12,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       grey: {
+        "light": "#202020",
         DEFAULT: "#191919",
       },
       brand: {
@@ -20,6 +21,7 @@ module.exports = {
       },
       pop: {
         DEFAULT: "#E93685",
+        dark: "#E01971",
       },
       azure: {
         DEFAULT: "#D6E4FF",
@@ -38,7 +40,7 @@ module.exports = {
         148: "80rem",
       },
       lineHeight: {
-        "custom": "1.1",
+        custom: "1.1",
       },
     },
   },

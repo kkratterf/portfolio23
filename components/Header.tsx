@@ -7,12 +7,10 @@ import Navbar from "./Navbar";
 function Header() {
   return (
     <>
-      <section id="top" className="relative z-50">
-        <nav className="sm:flex sm:justify-between pt-6 sm:pt-10 xl:pt-16 space-y-10 sm:space-y-0">
+        <nav className="sm:flex sm:justify-between pt-6 sm:pt-10 xl:pt-16 space-y-10 sm:space-y-0 relative z-50">
           <Logo />
           <Navbar />
         </nav>
-      </section>
     </>
   );
 }

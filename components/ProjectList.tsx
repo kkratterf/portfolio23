@@ -24,13 +24,11 @@ function ProjectList({ projects }: Props) {
       <motion.div className="grid grid-cols-1 gap-y-10 sm:gap-y-20 gap-x-6 2xl:gap-x-10 sm:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
           <ClientSideRoute
-            route={`/project-library/${project.slug.current}`}
+            route={`/project-archive/${project.slug.current}`}
             key={project._id}
           >
-            <motion.div
-              className="group cursor-pointer sm:opacity-70 sm:hover:opacity-100 duration-500 transition space-y-3 sm:space-y-4"
-            >
-              <div className="relative w-full h-116 sm:h-124 bg-grey dark:bg-pop aspect-w-1 rounded-xl overflow-hidden">
+            <motion.div className="group cursor-pointer sm:opacity-70 sm:hover:opacity-100 duration-500 transition space-y-3 sm:space-y-4">
+              <div className="relative w-full h-116 sm:h-124 bg-grey-light dark:bg-pop-dark aspect-w-1 rounded-xl overflow-hidden safari_fix">
                 <Image
                   className="object-center object-cover group-hover:scale-105 transition duration-500 rounded-xl"
                   src={urlFor(project.mainImage).url()}

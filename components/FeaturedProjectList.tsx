@@ -36,11 +36,11 @@ function FeaturedProjectList({ projects }: Props) {
       >
         {projects.map((project) => (
           <ClientSideRoute
-            route={`/project-library/${project.slug.current}`}
+            route={`/project-archive/${project.slug.current}`}
             key={project._id}
           >
             <div className="group cursor-pointer sm:opacity-70 sm:hover:opacity-100 duration-500 transition space-y-3 sm:space-y-4">
-              <div className="relative w-full h-116 bg-grey dark:bg-pop sm:h-124 aspect-w-1 rounded-xl overflow-hidden">
+              <div className="relative w-full h-116 bg-grey-light dark:bg-pop-dark sm:h-124 aspect-w-1 rounded-xl overflow-hidden safari_fix">
                 <Image
                   className="object-center object-cover group-hover:scale-105 transition duration-500 rounded-xl"
                   src={urlFor(project.mainImage).url()}

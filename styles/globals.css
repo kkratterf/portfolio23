@@ -114,4 +114,8 @@
             opacity: 0;
         }
     }
+
+    .safari_fix {
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+    }
 }

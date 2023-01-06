@@ -17,7 +17,7 @@ function Logo() {
           <h1 className="text-xl font-bold uppercase">
             Federico Kratter Thaler
           </h1>
-          <h2 className="font-medium">Experience & Interaction Designer</h2>
+          <h2 className="font-medium">User Experience & Interaction Designer</h2>
         </div>
       </Link>
     </motion.header>

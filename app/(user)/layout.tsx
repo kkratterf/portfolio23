@@ -28,12 +28,15 @@ export default function RootLayout({
   return (
     <html className="scroll-smooth">
       <Providers>
-        <body className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 xl:px-16 overflow-x-hidden scroll-smooth">
+        <body
+          id="top"
+          className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 xl:px-16 overflow-x-hidden scroll-smooth"
+        >
           {!loading ? (
             <>
-                <Header />
-                {children}
-                <Footer />
+              <Header />
+              {children}
+              <Footer />
             </>
           ) : (
             <Loader />

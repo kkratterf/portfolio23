@@ -14,12 +14,12 @@ function Navbar() {
       >
         <motion.ul className="space-y-2 sm:space-y-1 ">
           <li className="navitem">
-            <Link href="/project-library" scroll={true}>
-              Project library //
+            <Link href="/project-archive" scroll={true}>
+              Project archive //
             </Link>
           </li>
           <li className="navitem">
-            <a href="mailto:kkratterf@gmail.com">Contact me //</a>
+            <a href="mailto:kkratterf@gmail.com">Say hello //</a>
           </li>
           <PopButton />
         </motion.ul>

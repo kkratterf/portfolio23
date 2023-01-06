@@ -29,7 +29,7 @@ function Article(props: any) {
             </div>
             <h1 className="font-bold text-4xl sm:text-6xl">{project.title}</h1>
           </div>
-          <div className="relative w-full h-116 md:h-128 bg-grey dark:bg-pop rounded-xl overflow-hidden">
+          <div className="relative w-full h-116 md:h-128 bg-grey-light dark:bg-pop-dark rounded-xl overflow-hidden">
             <Image
               src={urlFor(project.mainImage).url()}
               className="object-center object-cover rounded-xl"
