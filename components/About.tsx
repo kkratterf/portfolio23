@@ -29,11 +29,11 @@ function About() {
           className="space-y-6 sm:space-y-10"
         >
           <motion.h4 className="text-2xl sm:text-4xl">
-            What about me. My name is Federico Kratter Thaler, I´m 24 and I am
-            from Milan, Italy. Since high school I have developed a particular
-            passion for photography, which subsequently led me to approach the
-            world of art and design, starting my studies at Politecnico di
-            Milano.
+            What about me. My name is Federico Kratter Thaler. Yes, the surname
+            is Austrian, no, I can`t speak Austrian. I´m 24 and I am from Milan,
+            Italy. Since high school I have developed a particular passion for
+            photography, which subsequently led me to approach the world of art
+            and design, starting my studies at Politecnico di Milano.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
             During these three years, in addition to investigating the themes of
@@ -50,7 +50,7 @@ function About() {
             Zegna, Crif, Edison and OneofUs.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
-            Currently I work as experience & interaction designer at IT Value
+            Currently I work as User Experience & Interaction Designer at IT Value
             Partner, another milanese consulting firm.
           </motion.h4>
         </motion.div>
