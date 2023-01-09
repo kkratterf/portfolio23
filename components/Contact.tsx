@@ -48,7 +48,8 @@ function Contact() {
           <li className="contactitem">
             <a
               href="https://www.linkedin.com/in/kkratter/"
-              target="blank"
+              target="_blank"
+              rel="noreferrer"
               className="group"
             >
               Link(edin) me //
@@ -60,7 +61,8 @@ function Contact() {
           <li className="contactitem">
             <a
               href="https://www.behance.net/kkratter"
-              target="blank"
+              target="_blank"
+              rel="noreferrer"
               className="group"
             >
               Be(hance) creative //
@@ -72,7 +74,8 @@ function Contact() {
           <li className="contactitem">
             <a
               href="https://www.instagram.com/kkratter/"
-              target="blank"
+              target="_blank"
+              rel="noreferrer"
               className="group"
             >
               Stalk me more //
