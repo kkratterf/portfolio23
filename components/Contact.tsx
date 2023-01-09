@@ -30,8 +30,7 @@ function Contact() {
           me. You are welcome.
         </h4>
         <h4 className="text-2xl sm:text-4xl">
-          And if you`re lazy and don´t want to scroll to get back to the
-          top,
+          And if you`re lazy and don´t want to scroll to get back to the top,
           <a href="#top">
             <span className="ml-1 sm:ml-2 underline underline-offset-8 cursor-pointer sm:opacity-70 sm:hover:opacity-100 transition duration-500">
               i feel you.
@@ -47,7 +46,11 @@ function Contact() {
       >
         <ul className="space-y-2">
           <li className="contactitem">
-            <a href="https://www.linkedin.com/in/kkratter/" className="group">
+            <a
+              href="https://www.linkedin.com/in/kkratter/"
+              target="blank"
+              className="group"
+            >
               Link(edin) me //
               <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
                 🥱
@@ -55,7 +58,11 @@ function Contact() {
             </a>
           </li>
           <li className="contactitem">
-            <a href="https://www.behance.net/kkratter" className="group">
+            <a
+              href="https://www.behance.net/kkratter"
+              target="blank"
+              className="group"
+            >
               Be(hance) creative //
               <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
                 🤯
@@ -63,7 +70,11 @@ function Contact() {
             </a>
           </li>
           <li className="contactitem">
-            <a href="https://www.instagram.com/kkratter/" className="group">
+            <a
+              href="https://www.instagram.com/kkratter/"
+              target="blank"
+              className="group"
+            >
               Stalk me more //
               <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
                 👀
