@@ -21,7 +21,10 @@ function ProjectList({ projects }: Props) {
       transition={{ duration: 2, delay: 1 }}
       className="pt-[40vh] sm:pt-[60vh] relative z-50"
     >
-      <motion.div className="grid grid-cols-1 gap-y-10 sm:gap-y-20 gap-x-6 2xl:gap-x-10 sm:grid-cols-2 xl:grid-cols-3">
+      <motion.div>
+        <motion.h1 className="font-bold text-4xl sm:text-6xl">Project Archive</motion.h1>
+      </motion.div>
+      <motion.div className="mt-10 sm:mt-20 grid grid-cols-1 gap-y-10 sm:gap-y-20 gap-x-6 2xl:gap-x-10 sm:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
           <ClientSideRoute
             route={`/project-archive/${project.slug.current}`}

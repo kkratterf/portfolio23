@@ -23,11 +23,7 @@ function Article(props: any) {
       <article>
         <section className="space-y-6 sm:space-y-10">
           <div className="space-y-3 sm:space-y-4">
-            <div className="flex space-x-2">
-              <h6 className="text-base sm:text-xl font-medium">
-                {project.category.title}
-              </h6>
-            </div>
+            <h6 className="text-base sm:text-xl font-medium">{project.category.title}</h6>
             <h1 className="font-bold text-4xl sm:text-6xl">{project.title}</h1>
           </div>
           <div className="relative w-full h-116 md:h-128 bg-grey-light dark:bg-pop-dark rounded-xl overflow-hidden">
