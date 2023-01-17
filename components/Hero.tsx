@@ -15,12 +15,12 @@ function Hero() {
       <div>
         <h4 className="text-3xl sm:text-5xl">
           <span className="italic">Hello</span>, I am Federico, a digital
-          product designer focus on user experience, user interface and
-          interaction. I have been creating mainly UX/UI design over past 3 years, but my work spans across
+          product designer focused on user experience, user interface and
+          interaction. I have been creating mainly UX/UI design over the past 3 years, but my work spans across
           digital design to branding, as well as creative & art directions,
           graphics, interior design, photography and frontend development. I build
           experiences from screens, mobiles to physical spaces. No matter the
-          mediums, I have been always blurring the line between design, art and
+          mediums, I have always been blurring the line between design, art and
           technology, and keep pushing the boundaries of what’s ahead.
         </h4>
       </div>

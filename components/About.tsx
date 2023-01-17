@@ -29,29 +29,30 @@ function About() {
           className="space-y-6 sm:space-y-10"
         >
           <motion.h4 className="text-2xl sm:text-4xl">
-            What about me. My name is Federico Kratter Thaler. Yes, the surname
-            is Austrian, no, I can`t speak Austrian. I´m 24 and I am from Milan,
-            Italy. Since high school I have developed a particular passion for
-            photography, which subsequently led me to approach the world of art
-            and design, starting my studies at Politecnico di Milano.
+            What about me. My name is Federico Kratter Thaler. Yes, my surname
+            is Austrian, no, (unfortunately) I can’t speak german. I’m 24 and I
+            am from Milan, Italy. While in high school I developed a special
+            passion for photography, which subsequently led me to approach the
+            world of art and design and then to start my studies (in Interior
+            design) at Politecnico di Milano.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
-            During these three years, in addition to investigating the themes of
-            space and living, I have also explored the themes of user
-            experience, interaction and communication design during my first
-            working experiences as a freelancer. Thanks to these experiences I
-            realized that these were the areas I wanted to focus on.
+            During those three years, while investigating the themes of space
+            and living, I also had the opportunity to explore the world of user
+            experience, interaction and communication design thanks to my first
+            projects as a freelancer. Those experiences made me realize that
+            those were the areas I wanted to focus on.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
-            My first work experience was in Value Partners, a consultancy firm
-            in Milan. I participated in various projects in the role of User
+            My first work experience was in Value Partners, a consulting firm in
+            Milan, trough which I took part to various projects as User
             Interface Designer, as well as User Experience & Interaction
-            Designer. The clients I worked with included Juventus, UnipolSai,
+            Designer, collaborating with clients such as Juventus, UnipolSai,
             Zegna, Crif, Edison and OneofUs.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
-            Currently I work as User Experience & Interaction Designer at IT Value
-            Partner, another milanese consulting firm.
+            I currently work as User Experience & Interaction Designer at the
+            consulting firm IT Value Partner.
           </motion.h4>
         </motion.div>
         <motion.div
