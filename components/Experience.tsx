@@ -35,8 +35,8 @@ function Experience({
         <ExperienceList
           experiences={experiences}
           educations={educations}
-          certifications={certifications}
           awards={awards}
+          certifications={certifications}
         />
       </motion.div>
       <motion.div

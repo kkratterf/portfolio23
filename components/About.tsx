@@ -37,14 +37,14 @@ function About() {
             design) at Politecnico di Milano.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
-            During those three years, while investigating the themes of space
-            and living, I also had the opportunity to explore the world of user
-            experience, interaction and communication design thanks to my first
-            projects as a freelancer. Those experiences made me realize that
-            those were the areas I wanted to focus on.
+            During those three years, in addition to investigating the themes of
+            space and living, I also had the opportunity to explore the world of
+            user experience, interaction and communication design thanks to my
+            first projects as a freelancer. Those experiences made me realize
+            that those were the areas I wanted to focus on.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
-            My first work experience was in Value Partners, a consulting firm in
+            My first work experience was in Value Partners, a consulting firm based in
             Milan, trough which I took part to various projects as User
             Interface Designer, as well as User Experience & Interaction
             Designer, collaborating with clients such as Juventus, UnipolSai,

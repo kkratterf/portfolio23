@@ -54,20 +54,7 @@ function Contact() {
             >
               Link(edin) me //
               <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
-                🥱
-              </span>
-            </a>
-          </li>
-          <li className="contactitem">
-            <a
-              href="https://www.behance.net/kkratter"
-              target="_blank"
-              rel="noreferrer"
-              className="group"
-            >
-              Be(hance) creative //
-              <span className="hidden md:inline-flex invisible group-hover:visible transition duration-500 pl-2 not-italic">
-                🤯
+                🤝
               </span>
             </a>
           </li>

@@ -68,6 +68,24 @@ function ExperienceList({
         viewport={{ once: true }}
         className="space-y-4"
       >
+        <h4 className="text-sm sm:text-base font-medium uppercase">Awards</h4>
+        {awards.map((award) => (
+          <div key={award._id} className="space-y-2">
+            <h5 className="text-xl sm:text-3xl font-bold">{award.title}</h5>
+            <p className="text-sm sm:text-base italic font-medium">
+              {award.brand}, {award.date}
+            </p>
+            <p className="text-sm font font-medium">{award.description}</p>
+          </div>
+        ))}
+      </motion.div>
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 0.04 }}
+        viewport={{ once: true }}
+        className="space-y-4"
+      >
         <h4 className="text-sm sm:text-base font-medium uppercase">
           Certification
         </h4>
@@ -82,24 +100,6 @@ function ExperienceList({
             <p className="text-sm font font-medium">
               {certification.description}
             </p>
-          </div>
-        ))}
-      </motion.div>
-      <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 0.04 }}
-        viewport={{ once: true }}
-        className="space-y-4"
-      >
-        <h4 className="text-sm sm:text-base font-medium uppercase">Awards</h4>
-        {awards.map((award) => (
-          <div key={award._id} className="space-y-2">
-            <h5 className="text-xl sm:text-3xl font-bold">{award.title}</h5>
-            <p className="text-sm sm:text-base italic font-medium">
-              {award.brand}, {award.date}
-            </p>
-            <p className="text-sm font font-medium">{award.description}</p>
           </div>
         ))}
       </motion.div>
