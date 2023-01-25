@@ -4,7 +4,9 @@ export default function Head() {
       <title>Federico Kratter Thaler - Portfolio 2023</title>
       <meta
         name="description"
-        content="Hello, I am Federico, a digital product designer focus on user experience, user interface and interaction."
+        content="I am Federico, a digital
+          product designer focused on user experience, user interface and
+          interaction."
       />
       <meta
         property="og:title"
@@ -12,7 +14,9 @@ export default function Head() {
       />
       <meta
         property="og:description"
-        content="Hello, I am Federico, a digital product designer focus on user experience, user interface and interaction."
+        content="I am Federico, a digital
+          product designer focused on user experience, user interface and
+          interaction."
       />
       <meta property="og:url" content="https://kkratter.com" />
       <meta property="og:image" content="/image/hello.jpg" />
