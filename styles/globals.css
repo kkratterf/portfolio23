@@ -53,6 +53,15 @@
     @apply cursor-pointer text-sm italic font-medium uppercase sm:opacity-70 sm:hover:opacity-100 text-brand dark:text-azure transition duration-500;
   }
 
+  .awwwards {
+    position: fixed;
+    z-index: 999;
+    transform: translateY(-50%);
+    top: 50%; 
+    right: 0
+  }
+
+
   .background {
         animation: background_move 30s ease-in-out infinite;
         transform-origin: 50% 50%;
