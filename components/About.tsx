@@ -44,15 +44,16 @@ function About() {
             that those were the areas I wanted to focus on.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
-            My first work experience was in Value Partners, a consulting firm based in
-            Milan, trough which I took part to various projects as User
+            My first work experience was in Value Partners, a consulting firm
+            based in Milan, trough which I took part to various projects as User
             Interface Designer, as well as User Experience & Interaction
             Designer, collaborating with clients such as Juventus, UnipolSai,
             Zegna, Crif, Edison and OneofUs.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
-            I currently work as User Experience & Interaction Designer at the
-            consulting firm IT Value Partner.
+            I currently work as Product Designer at Octostar, an Irish startup
+            that is developing the next generation of investigative intelligence
+            software.
           </motion.h4>
         </motion.div>
         <motion.div
