@@ -1,16 +1,16 @@
-"use client"
+'use client';
 
 // Import core
 // Import third parts
-import Image from "next/image";
-import { motion } from "framer-motion";
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 // Import customs
-import urlFor from "../lib/urlFor";
-import { Project } from "../typings";
-import ClientSideRoute from "./ClientSideRoute";
+import urlFor from '../lib/urlFor';
+import { Project } from '../typings';
+import ClientSideRoute from './ClientSideRoute';
 
 type Props = {
-    projects: Project[];
+  projects: Project[];
 };
 
 function ProjectList({ projects }: Props) {
@@ -22,7 +22,9 @@ function ProjectList({ projects }: Props) {
       className="pt-[40vh] sm:pt-[60vh] relative z-50"
     >
       <motion.div>
-        <motion.h1 className="font-bold text-4xl sm:text-6xl">Project Archive</motion.h1>
+        <motion.h1 className="font-bold text-4xl sm:text-6xl">
+          Project Archive
+        </motion.h1>
       </motion.div>
       <motion.div className="mt-10 sm:mt-20 grid grid-cols-1 gap-y-10 sm:gap-y-20 gap-x-6 2xl:gap-x-10 sm:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
@@ -43,7 +45,14 @@ function ProjectList({ projects }: Props) {
                 <h5 className="font-bold text-2xl sm:text-3xl">
                   {project.title}
                 </h5>
-                <p className="font-medium">{project.category.title}</p>
+                <p className="font-medium uppercase text-sm">
+                  {project.featured ? (
+                    <span className="italic">Case study - </span>
+                  ) : (
+                    <span className="italic">Showcase - </span>
+                  )}
+                  {project.category.title}
+                </p>
               </div>
             </motion.div>
           </ClientSideRoute>

@@ -52,7 +52,10 @@ function FeaturedProjectList({ projects }: Props) {
                 <h5 className="font-bold text-2xl sm:text-3xl">
                   {project.title}
                 </h5>
-                <p className="font-medium">{project.category.title}</p>
+                <p className="font-medium uppercase text-sm">
+                  <span className="italic">Case study - </span>
+                  {project.category.title}
+                </p>
               </div>
             </div>
           </ClientSideRoute>
