@@ -1,4 +1,4 @@
-import { buildLegacyTheme } from 'sanity';
+import { buildLegacyTheme } from "sanity";
 
 const props = {
   //"--my-white": "#fff",
@@ -13,6 +13,7 @@ export const myTheme = buildLegacyTheme({
   /* Base theme colors*/
   //"--black": props["--my-black"],
   //"--white": props["--my-white"],
+
   //"--gray": props["--my-black"],
   /* Brand*/
   /* Default button*/
