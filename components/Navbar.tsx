@@ -1,7 +1,6 @@
 // Import core
 // Import third parts
 import Link from "next/link";
-import PopButton from "./PopButton";
 import { motion } from "framer-motion";
 // Import customs
 
@@ -32,7 +31,6 @@ function Navbar() {
             Say hello //
           </a>
         </li>
-        <PopButton />
       </motion.ul>
     </motion.nav>
   );

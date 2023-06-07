@@ -1,8 +1,8 @@
 import { defineField, defineType } from 'sanity';
 
 export default defineType({
-  name: 'project',
-  title: 'Project',
+  name: 'photos',
+  title: 'Photos',
   type: 'document',
   fields: [
     defineField({
@@ -28,33 +28,9 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'category',
-      title: 'Category',
-      type: 'string',
-    }),
-    defineField({
       name: 'visible',
       title: 'Visible',
       type: 'boolean',
     }),
-    defineField({
-      name: 'order',
-      title: 'Order',
-      type: 'number',
-    }),
-    defineField({
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
-    }),
   ],
-
-  preview: {
-    select: {
-      title: 'title',
-      category: 'category',
-      media: 'mainImage',
-      visible: 'visible',
-    },
-  },
 });

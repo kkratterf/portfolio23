@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Federico Kratter Thaler - Portfolio 2023</title>
+      <title>Alessandra Arpi</title>
       <meta
         name="description"
         content="I am Federico, a digital

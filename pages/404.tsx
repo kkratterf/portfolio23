@@ -5,7 +5,6 @@ import Link from "next/link";
 // Import customs
 import "../styles/font.css";
 import "../styles/globals.css";
-import Background from "../components/Background";
 import Providers from "../components/Providers";
 
 export default function Custom404() {
@@ -25,7 +24,6 @@ export default function Custom404() {
             </div>
           </div>
           <AnalyticsWrapper />
-          <Background />
         </div>
       </Providers>
     </>

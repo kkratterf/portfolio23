@@ -1,5 +1,5 @@
 {
-  "name": "portfolio23",
+  "name": "alessandraarpi",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
     "@next/font": "13.0.7",
     "@portabletext/react": "^2.0.0",
-    "@sanity/image-url": "^1.0.1",
+    "@sanity/image-url": "^1.0.2",
     "@sanity/ui": "^1.0.4",
-    "@sanity/vision": "^3.0.0",
+    "@sanity/vision": "^3.11.5",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@types/node": "18.11.17",
     "@types/react": "18.0.26",
@@ -23,11 +24,12 @@
     "eslint-config-next": "13.0.7",
     "framer-motion": "^8.0.2",
     "next": "13.0.7",
-    "next-sanity": "^3.1.4",
+    "next-sanity": "^4.3.3",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sanity": "^3.0.0",
+    "react-draggable": "^4.4.5",
+    "sanity": "^3.11.5",
     "sanity-plugin-iframe-pane": "^2.1.1",
     "sharp": "^0.31.3",
     "styled-components": "^5.2.0",

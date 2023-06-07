@@ -1,14 +1,12 @@
 // Import core
-import React from "react";
+import React from 'react';
+import { useState } from 'react';
 // Import third parts
-import { groq } from "next-sanity";
-import { client } from "../../lib/sanity.client"
+import { groq } from 'next-sanity';
+import { client } from '../../lib/sanity.client';
 // Import customs
-import Hero from "../../components/Hero";
-import About from "../../components/About";
-import Experience from "../../components/Experience";
-import Contact from "../../components/Contact";
-import FeaturedProjectList from "../../components/FeaturedProjectList";
+import FeaturedProjectList from '../../components/FeaturedProjectList';
+import ProvaButton from '../../components/Desktop/ProvaButton';
 
 export const revalidate = 6000;
 
@@ -43,27 +41,15 @@ const query_awards = groq`
   } | order(_createdAt desc)
 `;
 
-
 export default async function HomePage() {
+  const projects = await client.fetch(query);
 
-  const projects = await client.fetch(query)
-  const experiences = await client.fetch(query_experience);
-  const educations = await client.fetch(query_education);
-  const certifications = await client.fetch(query_certification);
-  const awards = await client.fetch(query_awards);
   
+
   return (
     <div className="space-y-40 sm:space-y-96 overflow-hidden overscroll-none">
-      <Hero />
+      <ProvaButton />
       <FeaturedProjectList projects={projects} />
-      <About />
-      <Experience
-        experiences={experiences}
-        educations={educations}
-        certifications={certifications}
-        awards={awards}
-      />
-      <Contact />
     </div>
   );
 }
