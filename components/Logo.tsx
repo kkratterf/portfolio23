@@ -18,7 +18,7 @@ function Logo() {
             Federico Kratter Thaler
           </h1>
           <h2 className="font-medium !cursor-pointer">
-            User Experience & Interaction Designer
+            Product Designer
           </h2>
         </div>
       </Link>
