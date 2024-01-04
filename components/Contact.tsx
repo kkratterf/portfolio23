@@ -1,7 +1,6 @@
 "use client";
 
 // Import core
-// Import third parts
 import { motion } from "framer-motion";
 // Import customs
 

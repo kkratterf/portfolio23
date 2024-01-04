@@ -1,9 +1,8 @@
 // Import core
-// Import third parts
 import Link from "next/link";
-import PopButton from "./PopButton";
 import { motion } from "framer-motion";
 // Import customs
+import PopButton from '@/components/PopButton';
 
 function Navbar() {
   return (

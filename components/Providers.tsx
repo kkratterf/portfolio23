@@ -1,7 +1,6 @@
 "use client";
 
 // Import core
-// Import third parts
 import { ThemeProvider } from "next-themes";
 // Import customs
 

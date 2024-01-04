@@ -1,13 +1,12 @@
 "use client";
 
 // Import core
-// Import third parts
 import { motion } from "framer-motion";
 // Import customs
 
 function Footer() {
   return (
-    <motion.section className="relative mt-40 mb-6 sm:mb-10 xl:mb-16 z-40">
+    <motion.footer className="relative mt-40 mb-6 sm:mb-10 xl:mb-16 z-40">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -18,7 +17,7 @@ function Footer() {
           <span className="italic">2023</span>, Federico Kratter Thaler
         </p>
       </motion.div>
-    </motion.section>
+    </motion.footer>
   );
 }
 

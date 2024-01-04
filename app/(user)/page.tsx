@@ -2,13 +2,13 @@
 import React from "react";
 // Import third parts
 import { groq } from "next-sanity";
-import { client } from "../../lib/sanity.client"
+import { client } from "@/lib/sanity.client"
 // Import customs
-import Hero from "../../components/Hero";
-import About from "../../components/About";
-import Experience from "../../components/Experience";
-import Contact from "../../components/Contact";
-import FeaturedProjectList from "../../components/FeaturedProjectList";
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Experience from '@/components/Experience';
+import Contact from '@/components/Contact';
+import FeaturedProjectList from '@/components/FeaturedProjectList';
 
 export const revalidate = 6000;
 

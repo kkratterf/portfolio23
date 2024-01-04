@@ -2,7 +2,6 @@
 
 // Import core
 import { useState, useEffect } from "react";
-// Import third parts
 import { useTheme } from "next-themes";
 // Import customs
 

@@ -1,13 +1,12 @@
 // Import core
 import React from "react";
-// Import third parts
 import { previewData } from "next/headers";
 import { groq } from "next-sanity";
-import { client } from "../../../lib/sanity.client";
-import PreviewSuspense from "../../../components/PreviewSuspense";
 // Import customs
-import PreviewProjectList from "../../../components/PreviewProjectList";
-import ProjectList from "../../../components/ProjectList";
+import PreviewProjectList from "@/components/PreviewProjectList";
+import ProjectList from "@/components/ProjectList";
+import { client } from '@/lib/sanity.client';
+import PreviewSuspense from '@/components/PreviewSuspense';
 
 export const revalidate = 6000;
 

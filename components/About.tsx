@@ -1,7 +1,6 @@
 "use client"
 
 // Import core
-// Import third parts
 import Image from "next/image";
 import { motion } from "framer-motion";
 // Import customs

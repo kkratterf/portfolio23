@@ -1,8 +1,7 @@
 // Import core
-// Import third parts
 // Import customs
-import Logo from "./Logo";
-import Navbar from "./Navbar";
+import Logo from "@/components/Logo";
+import Navbar from '@/components/Navbar';
 
 function Header() {
 

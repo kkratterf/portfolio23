@@ -1,5 +1,4 @@
 // Import core
-// Import third parts
 import Link from "next/link";
 import { motion } from "framer-motion";
 // Import customs
@@ -18,7 +17,7 @@ function Logo() {
             Federico Kratter Thaler
           </h1>
           <h2 className="font-medium !cursor-pointer">
-            Product Designer
+            Product & Design System Designer
           </h2>
         </div>
       </Link>

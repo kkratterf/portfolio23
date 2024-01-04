@@ -1,13 +1,12 @@
 "use client"
 
 // Import core
-// Import third parts
 import Image from "next/image";
 import { motion } from "framer-motion";
 // Import customs
-import urlFor from "../lib/urlFor";
-import { Project } from "../typings";
-import ClientSideRoute from "./ClientSideRoute";
+import urlFor from "@/lib/urlFor";
+import { Project } from "@/typings";
+import ClientSideRoute from "@/components/ClientSideRoute";
 
 type Props = {
     projects: Project[];

@@ -1,10 +1,9 @@
 // Import core
-// Import third parts
-import { groq } from "next-sanity";
-import { client } from "../../../../lib/sanity.client";
+import { groq } from 'next-sanity';
 // Import customs
-import { Project } from "../../../../typings";
-import Article from "../../../../components/Article";
+import { Project } from "@/typings";
+import Article from "@/components/Article";
+import { client } from '@/lib/sanity.client';
 
 type Props = {
   params: {

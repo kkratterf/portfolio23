@@ -2,7 +2,6 @@
 
 // Import core
 import React from "react";
-// Import third parts
 import Link from "next/link";
 // Import customs
 

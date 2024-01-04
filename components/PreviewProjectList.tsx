@@ -1,7 +1,9 @@
 "use client"
 
-import { usePreview } from "../lib/sanity.preview";
-import ProjectList from "./ProjectList";
+// Import core
+// Import customs
+import { usePreview } from "@/lib/sanity.preview";
+import ProjectList from "@/components/ProjectList";
 
 type Props = {
     query: string;

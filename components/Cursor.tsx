@@ -2,7 +2,6 @@
 
 // Import core
 import { useEffect, useState } from "react";
-// Import third parts
 import { motion } from "framer-motion";
 // Import customs
 

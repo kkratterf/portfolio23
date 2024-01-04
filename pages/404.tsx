@@ -1,12 +1,11 @@
 // Import core
-// Import third parts
-import { AnalyticsWrapper } from "../components/AnalyticsWrapper";
+import { Analytics } from "@vercel/analytics/react";
 import Link from "next/link";
 // Import customs
-import "../styles/font.css";
-import "../styles/globals.css";
-import Background from "../components/Background";
-import Providers from "../components/Providers";
+import "@/styles/font.css";
+import "@/styles/globals.css";
+import Background from "@/components/Background";
+import Providers from "@/components/Providers";
 
 export default function Custom404() {
   return (
@@ -24,7 +23,7 @@ export default function Custom404() {
               </h4>
             </div>
           </div>
-          <AnalyticsWrapper />
+          <Analytics />
           <Background />
         </div>
       </Providers>

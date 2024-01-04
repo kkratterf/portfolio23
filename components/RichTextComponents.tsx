@@ -1,9 +1,8 @@
 // Import core
-// Import third parts
 import Link from "next/link";
 import Image from "next/image";
 // Import customs
-import urlFor from "../lib/urlFor";
+import urlFor from "@/lib/urlFor";
 
 export const RichTextComponents = {
   types: {

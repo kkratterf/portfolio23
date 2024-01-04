@@ -1,14 +1,13 @@
 "use client"
 
 // Import core
-// Import third parts
 import Image from "next/image";
-import urlFor from "../lib/urlFor";
+import Link from 'next/link';
 import { PortableText } from "@portabletext/react";
 import { motion } from "framer-motion";
 // Import customs
-import { RichTextComponents } from "../components/RichTextComponents";
-import Link from "next/link";
+import { RichTextComponents } from "@/components/RichTextComponents";
+import urlFor from '@/lib/urlFor';
 
 function Article(props: any) {
   const project = props.project

@@ -1,11 +1,10 @@
 "use client";
 
 // Import core
-// Import third parts
 import { motion } from "framer-motion";
 // Import customs
-import ExperienceList from "./ExperienceList";
-import { Experience, Education, Certification, Award } from "../typings";
+import ExperienceList from "@/components/ExperienceList";
+import { Experience, Education, Certification, Award } from "@/typings";
 
 type Props = {
   experiences: Experience[];

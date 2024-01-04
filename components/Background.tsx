@@ -1,5 +1,4 @@
 // Import core
-// Import third parts
 // Import customs
 
 function Background() {
