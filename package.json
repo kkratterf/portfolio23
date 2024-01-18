@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "Federico Kratter Thaler - Portfolio 23",
   "author": "Federico Kratter Thaler",
-  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
