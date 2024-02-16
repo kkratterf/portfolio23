@@ -3,19 +3,19 @@
 // Import core
 import { motion } from "framer-motion";
 // Import customs
-import { Experience, Education, Certification, Award } from "@/typings";
+import { Experience, Education, Volunteering, Award } from '@/typings';
 
 type Props = {
   experiences: Experience[];
   educations: Education[];
-  certifications: Certification[];
+  volunteering: Volunteering[];
   awards: Award[];
 };
 
 function ExperienceList({
   experiences,
   educations,
-  certifications,
+  volunteering,
   awards,
 }: Props) {
   return (
@@ -67,14 +67,20 @@ function ExperienceList({
         viewport={{ once: true }}
         className="space-y-4"
       >
-        <h4 className="text-sm sm:text-base font-medium uppercase">Awards</h4>
-        {awards.map((award) => (
-          <div key={award._id} className="space-y-2">
-            <h5 className="text-xl sm:text-3xl font-bold">{award.title}</h5>
+        <h4 className="text-sm sm:text-base font-medium uppercase">
+          Volunteering
+        </h4>
+        {volunteering.map((volunteering) => (
+          <div key={volunteering._id} className="space-y-2">
+            <h5 className="text-xl sm:text-3xl font-bold">
+              {volunteering.title}
+            </h5>
             <p className="text-sm sm:text-base italic font-medium">
-              {award.brand}, {award.date}
+              {volunteering.brand}, {volunteering.date}
             </p>
-            <p className="text-sm font font-medium">{award.description}</p>
+            <p className="text-sm font font-medium">
+              {volunteering.description}
+            </p>
           </div>
         ))}
       </motion.div>
@@ -85,20 +91,14 @@ function ExperienceList({
         viewport={{ once: true }}
         className="space-y-4"
       >
-        <h4 className="text-sm sm:text-base font-medium uppercase">
-          Certification
-        </h4>
-        {certifications.map((certification) => (
-          <div key={certification._id} className="space-y-2">
-            <h5 className="text-xl sm:text-3xl font-bold">
-              {certification.title}
-            </h5>
+        <h4 className="text-sm sm:text-base font-medium uppercase">Awards</h4>
+        {awards.map((award) => (
+          <div key={award._id} className="space-y-2">
+            <h5 className="text-xl sm:text-3xl font-bold">{award.title}</h5>
             <p className="text-sm sm:text-base italic font-medium">
-              {certification.school}, {certification.date}
+              {award.brand}, {award.date}
             </p>
-            <p className="text-sm font font-medium">
-              {certification.description}
-            </p>
+            <p className="text-sm font font-medium">{award.description}</p>
           </div>
         ))}
       </motion.div>

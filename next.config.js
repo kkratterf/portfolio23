@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     appDir: true,
-    //scrollRestoration: true,
   },
   images: {
     domains: ["cdn.sanity.io"]

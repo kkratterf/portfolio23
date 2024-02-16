@@ -35,6 +35,13 @@ interface Award extends Base {
   description: text;
 }
 
+interface Volunteering extends Base {
+  title: string;
+  brand: string;
+  date: string;
+  description: text;
+}
+
 interface Certification extends Base {
   title: string;
   school: string;

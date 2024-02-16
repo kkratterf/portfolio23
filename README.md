@@ -1,3 +1,3 @@
-# Federico Kratter Thaler - Portfolio 23
+# Federico Kratter Thaler - Product & Design System Designer
 
 Description coming soon...

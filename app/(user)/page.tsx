@@ -31,8 +31,8 @@ const query_education = groq`
   } | order(_createdAt desc)
 `;
 
-const query_certification = groq`
-  *[_type=='certification'] {
+const query_volunteering = groq`
+  *[_type=='volunteering'] {
     ...,
   } | order(_createdAt desc)
 `;
@@ -49,7 +49,7 @@ export default async function HomePage() {
   const projects = await client.fetch(query)
   const experiences = await client.fetch(query_experience);
   const educations = await client.fetch(query_education);
-  const certifications = await client.fetch(query_certification);
+  const volunteering = await client.fetch(query_volunteering);
   const awards = await client.fetch(query_awards);
   
   return (
@@ -60,7 +60,7 @@ export default async function HomePage() {
       <Experience
         experiences={experiences}
         educations={educations}
-        certifications={certifications}
+        volunteering={volunteering}
         awards={awards}
       />
       <Contact />

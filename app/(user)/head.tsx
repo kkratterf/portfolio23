@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Federico Kratter Thaler - Portfolio 2023</title>
+      <title>Federico Kratter Thaler - Product & Design System Designer</title>
       <meta
         name="description"
         content="I am Federico, a digital
@@ -10,7 +10,7 @@ export default function Head() {
       />
       <meta
         property="og:title"
-        content="Federico Kratter Thaler - Portfolio 2023"
+        content="Federico Kratter Thaler - Product & Design System Designer"
       />
       <meta
         property="og:description"
@@ -30,7 +30,7 @@ export default function Head() {
       <meta property="og:type" content="website" />
       <meta
         property="og:site_name"
-        content="Federico Kratter Thaler - Portfolio 2023 "
+        content="Federico Kratter Thaler - Product & Design System Designer "
       />
       <meta property="og:locale" content="it_IT" />
       <link

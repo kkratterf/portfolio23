@@ -3,7 +3,6 @@
 // Import core
 import { useEffect, useState } from "react";
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 // Import customs
 import "@/styles/globals.css";
 import "@/styles/font.css";
@@ -30,7 +29,7 @@ export default function RootLayout({
   const [cursorVariant, setCursorVariant] = useState("default");
 
   return (
-    <html className="scroll-smooth">
+    <html className="scroll-smooth" suppressHydrationWarning>
       <Providers>
         <body
           onMouseUp={() => setCursorVariant('default')}
@@ -49,7 +48,6 @@ export default function RootLayout({
           <Cursor cursorVariant={cursorVariant} />
           <Awwwards />
           <Background />
-
           <Analytics />
         </body>
       </Providers>

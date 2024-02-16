@@ -51,7 +51,7 @@ function About() {
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
             I currently work as Product Designer at Octostar, an Irish startup
-            that is developing the next generation of investigative intelligence
+            that is developing the next generation of Investigative & Decision intelligence
             software.
           </motion.h4>
         </motion.div>

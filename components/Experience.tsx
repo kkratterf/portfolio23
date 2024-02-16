@@ -4,21 +4,16 @@
 import { motion } from "framer-motion";
 // Import customs
 import ExperienceList from "@/components/ExperienceList";
-import { Experience, Education, Certification, Award } from "@/typings";
+import { Experience, Education, Volunteering, Award } from '@/typings';
 
 type Props = {
   experiences: Experience[];
   educations: Education[];
-  certifications: Certification[];
+  volunteering: Volunteering[];
   awards: Award[];
 };
 
-function Experience({
-  experiences,
-  educations,
-  certifications,
-  awards,
-}: Props) {
+function Experience({ experiences, educations, volunteering, awards }: Props) {
   return (
     <motion.section className="relative z-20 space-y-10 sm:space-y-20">
       <motion.div
@@ -35,7 +30,7 @@ function Experience({
           experiences={experiences}
           educations={educations}
           awards={awards}
-          certifications={certifications}
+          volunteering={volunteering}
         />
       </motion.div>
       <motion.div
