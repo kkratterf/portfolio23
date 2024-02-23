@@ -36,7 +36,9 @@ function ExperienceList({
             <p className="text-sm sm:text-base italic font-medium">
               {experience.brand}, {experience.fromto}
             </p>
-            <p className="text-sm font font-medium">{experience.description}</p>
+            <p className="text-sm sm:text-base font-medium">
+              {experience.description}
+            </p>
           </div>
         ))}
       </motion.div>
@@ -56,7 +58,9 @@ function ExperienceList({
             <p className="text-sm sm:text-base italic font-medium">
               {education.school}, {education.fromto}
             </p>
-            <p className="text-sm font font-medium">{education.description}</p>
+            <p className="text-sm sm:text-base font-medium">
+              {education.description}
+            </p>
           </div>
         ))}
       </motion.div>
@@ -78,7 +82,7 @@ function ExperienceList({
             <p className="text-sm sm:text-base italic font-medium">
               {volunteering.brand}, {volunteering.date}
             </p>
-            <p className="text-sm font font-medium">
+            <p className="text-sm sm:text-base font-medium">
               {volunteering.description}
             </p>
           </div>
@@ -98,7 +102,9 @@ function ExperienceList({
             <p className="text-sm sm:text-base italic font-medium">
               {award.brand}, {award.date}
             </p>
-            <p className="text-sm font font-medium">{award.description}</p>
+            <p className="text-sm sm:text-base font-medium">
+              {award.description}
+            </p>
           </div>
         ))}
       </motion.div>

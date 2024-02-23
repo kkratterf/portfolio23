@@ -103,11 +103,6 @@ interface Category extends Base {
     title: string;
 }
 
-interface Team extends Base {
-  name: string;
-  slug: Slug;
-}
-
 interface MainImage {
   _type: "image";
   asset: Reference;
