@@ -20,7 +20,8 @@ function Hero() {
           creative & art directions, graphics, interior design, photography and
           frontend development. I build experiences from screens, mobiles to
           physical spaces. No matter the mediums, through my work I aim to blur
-          the line between design, art and technology while always pushing the boundaries of my creativity.
+          the line between design, art and technology while always pushing the
+          boundaries of my creativity.
         </h4>
       </div>
     </motion.section>
