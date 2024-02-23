@@ -55,11 +55,6 @@ export default defineType({
       type: "number",
     }),
     defineField({
-      name: "realizedAt",
-      title: "Realized at",
-      type: "date",
-    }),
-    defineField({
       name: "body",
       title: "Body",
       type: "blockContent",
