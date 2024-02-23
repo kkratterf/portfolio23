@@ -14,7 +14,7 @@ function Hero() {
       <div>
         <h4 className="text-3xl sm:text-5xl">
           <span className="italic">Hello</span>, I am Federico, a digital
-          product designer focused on user experience, user interface and
+          product designer focused on design systems, user experience, user interface and
           interaction. I have been creating mainly UX/UI design over the past 3
           years, but my work spans across digital design to branding, as well as
           creative & art directions, graphics, interior design, photography and
