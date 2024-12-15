@@ -29,7 +29,7 @@ function About() {
         >
           <motion.h4 className="text-2xl sm:text-4xl">
             What about me. My name is Federico Kratter Thaler. Yes, my surname
-            is Austrian, no, (unfortunately) I can’t speak german. I’m 24 and I
+            is Austrian, no, (unfortunately) I can’t speak german. I’m 26 and I
             am from Milan, Italy. While in high school I developed a special
             passion for photography, which subsequently led me to approach the
             world of art and design and then to start my studies (in Interior
