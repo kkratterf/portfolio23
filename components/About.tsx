@@ -16,7 +16,7 @@ function About() {
         viewport={{ once: true }}
         className="space-y-20 sm:space-y-40"
       >
-        <motion.h3 className="text-6xl sm:text-9xl font-bold">
+        <motion.h3 className="font-bold text-6xl sm:text-9xl">
           Inspired by the words of Alessandro Mendini: I am not a designer, I am
           a dragon.
         </motion.h3>
@@ -50,8 +50,8 @@ function About() {
             Zegna, Crif, Edison and OneofUs.
           </motion.h4>
           <motion.h4 className="text-2xl sm:text-4xl">
-            I currently work as Product Designer at Octostar, an Irish startup
-            that is developing the next generation of Investigative & Decision intelligence
+            I&apos;m currently working as Product Designer at Octostar, an Irish startup
+            that is shaping the next generation of Investigative & Decision intelligence
             software.
           </motion.h4>
         </motion.div>
@@ -60,11 +60,11 @@ function About() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 0.04 }}
           viewport={{ once: true }}
-          className="relative w-full h-96 sm:h-124 md:h-128 bg-grey-light dark:bg-pop-dark rounded-xl overflow-hidden"
+          className="relative bg-grey-light dark:bg-pop-dark rounded-xl w-full h-96 sm:h-124 md:h-128 overflow-hidden"
         >
           <Image
             src="/image/cover.jpg"
-            className="object-center object-cover rounded-xl"
+            className="rounded-xl object-center object-cover"
             alt="Federico Kratter Thaler"
             fill
           />
